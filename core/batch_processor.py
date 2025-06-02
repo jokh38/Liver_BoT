@@ -32,47 +32,66 @@ class BatchProcessor:
         self.gpu_manager = GPUMemoryManager()
         logger.info(f"배치 처리기 초기화 완료 (스트림: {num_streams}, 배치 크기: {batch_size})")
     
-    def estimate_batch_size(self, num_combinations: int, data_size: int) -> int:
+    def estimate_batch_size(self, num_combinations: int, main_data_gpu_size_bytes: int = 0, per_item_additional_gpu_bytes: int = 1024*100) -> int:
         """
-        GPU 메모리 기반 최적 배치 크기 계산
+        GPU 메모리 기반 최적 배치 크기 동적 계산
         
         Args:
-            num_combinations: 총 매개변수 조합 수
-            data_size: 처리할 데이터 크기 (요소 수)
+            num_combinations: 총 처리해야 할 아이템(조합) 수
+            main_data_gpu_size_bytes: 현재 GPU에 로드된 주 데이터의 크기 (바이트 단위)
+            per_item_additional_gpu_bytes: 각 아이템(조합)을 처리하는 데 필요한 추가 GPU 메모리 (바이트 단위)
+                                           (예: 각 CUDA 태스크에 필요한 임시 버퍼 등)
             
         Returns:
-            최적 배치 크기
+            계산된 최적 배치 크기
         """
         try:
-            # GPU 메모리 정보 획득
             free_memory, total_memory = self.gpu_manager.get_memory_info()
+            if free_memory is None or total_memory is None: # GPU 정보 조회 실패 시
+                logger.warning("GPU 메모리 정보 조회 실패. 기본 배치 크기 사용.")
+                return min(self.batch_size, num_combinations)
+
+            base_overall_overhead = 1024 * 1024 * 100  # CuPy 컨텍스트, 일반 버퍼 등을 위한 100MB 기본 오버헤드
+            safety_factor = 0.8  # 가용 메모리의 80% 사용
+
+            # 배치 아이템 처리를 위해 사용 가능한 메모리
+            usable_memory_for_batch_items = (free_memory * safety_factor) - base_overall_overhead - main_data_gpu_size_bytes
+
+            logger.debug(f"GPU 메모리: 총 {total_memory / (1024**2):.1f}MB, "
+                         f"가용 {free_memory / (1024**2):.1f}MB, "
+                         f"안전계수 적용 가용: {(free_memory * safety_factor) / (1024**2):.1f}MB")
+            logger.debug(f"메모리 계산: 기본 오버헤드 {base_overall_overhead / (1024**2):.1f}MB, "
+                         f"주 데이터 크기 {main_data_gpu_size_bytes / (1024**2):.1f}MB")
+            logger.debug(f"배치 아이템 가용 메모리: {usable_memory_for_batch_items / (1024**2):.1f}MB")
+
+            if usable_memory_for_batch_items <= 0:
+                logger.warning(f"배치 아이템 처리에 사용 가능한 GPU 메모리 부족 "
+                               f"({usable_memory_for_batch_items / (1024**2):.1f}MB). "
+                               f"배치 크기를 1로 설정합니다.")
+                return 1
+
+            if per_item_additional_gpu_bytes <= 0: # 0 또는 음수일 경우, 아이템당 메모리 제한 없음
+                calculated_batch_size = num_combinations
+                logger.info(f"per_item_additional_gpu_bytes가 0이거나 작으므로, "
+                            f"아이템당 메모리 제한 없이 배치 크기 설정: {calculated_batch_size}")
+            else:
+                calculated_batch_size = max(1, int(usable_memory_for_batch_items / per_item_additional_gpu_bytes))
+                logger.info(f"아이템당 필요 메모리 {per_item_additional_gpu_bytes / 1024:.1f}KB 기준, "
+                            f"계산된 배치 크기: {calculated_batch_size}")
+
+            # Config의 BATCH_SIZE (최대 허용 배치 크기)와 num_combinations (총 아이템 수)를 넘지 않도록 조정
+            optimal_batch_size = min(calculated_batch_size, self.batch_size, num_combinations)
             
-            # 기본 메모리 요구사항 (고정 오버헤드 + 데이터)
-            base_memory = 1024 * 1024 * 100  # 100MB 기본 오버헤드
-            
-            # 단일 데이터 항목당 메모리 (float32 = 4바이트 * 배열 크기)
-            item_memory = 4 * data_size
-            
-            # 안전 계수 (가용 메모리의 80%만 사용)
-            safety_factor = 0.8
-            
-            # 사용 가능한 메모리
-            available_memory = int(free_memory * safety_factor) - base_memory
-            
-            # 배치 크기 계산
-            batch_size = max(1, int(available_memory / item_memory))
-            
-            # 설정된 최대 배치 크기와 비교하여 최소값 선택
-            optimal_batch_size = min(batch_size, self.batch_size, num_combinations)
-            
-            logger.info(f"메모리 분석: 가용={free_memory/1024**2:.1f}MB, 필요={item_memory*num_combinations/1024**2:.1f}MB")
-            logger.info(f"최적 배치 크기: {optimal_batch_size} (전체 조합 수: {num_combinations})")
+            logger.info(f"최종 최적 배치 크기: {optimal_batch_size} "
+                        f"(요청된 조합 수: {num_combinations}, 최대 배치 크기 설정: {self.batch_size})")
             
             return optimal_batch_size
             
         except Exception as e:
-            logger.warning(f"배치 크기 계산 중 오류: {e}, 기본값 사용")
-            return min(self.batch_size, num_combinations)
+            logger.error(f"배치 크기 계산 중 예외 발생: {e}. 기본 배치 크기 사용.")
+            import traceback
+            logger.error(traceback.format_exc())
+            return min(self.batch_size, num_combinations) # 예외 발생 시 안전한 기본값 반환
     
     def create_batches(self, items: List[Any], batch_size: Optional[int] = None) -> List[List[Any]]:
         """
@@ -147,14 +166,34 @@ class BatchProcessor:
                 
             # 배치 처리를 위한 설정
             logger.info(f"총 매개변수 조합 수: {len(batch_data.parameters)}")
-            data_size = len(batch_data.scan_times)
-            batch_size = self.estimate_batch_size(len(batch_data.parameters), data_size)
             
             # 스캔 시간을 GPU 메모리로 전송
             scan_times_gpu = self.gpu_manager.array_to_gpu(batch_data.scan_times)
             
             if scan_times_gpu is None:
-                logger.error("GPU 배열 변환 실패")
+                logger.error("GPU 배열 변환 실패 (scan_times_gpu)")
+                # scan_times_gpu가 None이면 .nbytes 접근 시 오류 발생하므로 여기서 처리
+                current_main_data_size = 0
+                # 이 경우, estimate_batch_size가 메모리 부족으로 1을 반환할 가능성이 높음
+                # 또는 여기서 처리를 중단하고 빈 결과를 반환할 수도 있음
+            else:
+                current_main_data_size = scan_times_gpu.nbytes
+
+            # 배치 크기 동적 계산
+            # 각 파라미터 조합 처리 시 scan_times_gpu (주 데이터)는 공유되고,
+            # 각 태스크(조합)당 추가적인 작은 메모리(예: 결과 저장, 임시 변수 등)가 필요하다고 가정
+            # 여기서는 100KB로 설정 (per_item_additional_gpu_bytes)
+            batch_size = self.estimate_batch_size(
+                num_combinations=len(batch_data.parameters),
+                main_data_gpu_size_bytes=current_main_data_size,
+                per_item_additional_gpu_bytes=1024*100  # 예: 100KB
+            )
+            if batch_size == 1 and current_main_data_size > (self.gpu_manager.get_memory_info()[0] * 0.5): # 매우 큰 주 데이터로 배치1이 된 경우
+                logger.warning("배치 크기가 1로 계산되었으며, 주 데이터가 GPU 메모리의 상당 부분을 차지합니다. "
+                               "메모리 부족 위험이 있을 수 있습니다.")
+
+            if scan_times_gpu is None and len(batch_data.parameters) > 0 : # 재확인: scan_times_gpu가 없고 처리할 파라미터가 있다면
+                logger.error("scan_times_gpu가 GPU로 전송되지 않았으나 처리할 파라미터가 있습니다. 진행 중단.")
                 return batch_result
             
             # 배치 처리를 위해 매개변수 분할
@@ -258,15 +297,29 @@ class BatchProcessor:
             # DR 인덱스 매핑 생성
             dr_to_index = {dr: idx for idx, dr in enumerate(DR_list)}
             
-            # 배치 크기 계산
-            data_size = scan_time_tensor.shape[1]  # 레이어 수
-            batch_size = self.estimate_batch_size(len(parameter_combinations), data_size)
-            
             # 스캔 시간 텐서를 GPU로 전송 (1회)
             scan_tensor_gpu = self.gpu_manager.array_to_gpu(scan_time_tensor)
-            
+
             if scan_tensor_gpu is None:
-                logger.error("GPU 스캔 시간 텐서 전송 실패")
+                logger.error("GPU 스캔 시간 텐서 전송 실패 (scan_tensor_gpu)")
+                current_main_data_size = 0
+            else:
+                current_main_data_size = scan_tensor_gpu.nbytes
+                logger.info(f"GPU로 스캔 시간 텐서 전송 완료: {scan_tensor_gpu.shape}, 크기: {current_main_data_size / (1024**2):.2f} MB")
+
+            # 배치 크기 동적 계산
+            # scan_tensor_gpu (주 데이터)는 공유, 각 파라미터 조합 처리에 추가 메모리 필요 가정
+            batch_size = self.estimate_batch_size(
+                num_combinations=len(parameter_combinations),
+                main_data_gpu_size_bytes=current_main_data_size,
+                per_item_additional_gpu_bytes=1024*100  # 예: 100KB, 각 조합 처리 오버헤드
+            )
+            if batch_size == 1 and current_main_data_size > (self.gpu_manager.get_memory_info()[0] * 0.5): # 매우 큰 주 데이터로 배치1이 된 경우
+                logger.warning("배치 크기가 1로 계산되었으며, 주 데이터가 GPU 메모리의 상당 부분을 차지합니다. "
+                               "메모리 부족 위험이 있을 수 있습니다.")
+
+            if scan_tensor_gpu is None and len(parameter_combinations) > 0:
+                logger.error("scan_tensor_gpu가 GPU로 전송되지 않았으나 처리할 파라미터 조합이 있습니다. 진행 중단.")
                 return all_results
             
             logger.info(f"GPU로 스캔 시간 텐서 전송 완료: {scan_tensor_gpu.shape}")
