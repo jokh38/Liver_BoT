@@ -41,13 +41,31 @@ class ScanTimeCalculator:
         
         # 캐시 초기화
         self._energy_to_doserate = {}
+        self.doserate_table_gpu = None  # GPU 선량율 테이블 초기화
         
         # GPU 메모리 관리자
         self.gpu_manager = GPUMemoryManager()
         
+        # 선량율 테이블 로드 및 GPU로 전송
+        try:
+            loaded_table = self._load_doserate_table()
+            if loaded_table is not None and loaded_table.size > 0:
+                self.doserate_table_gpu = self.gpu_manager.array_to_gpu(loaded_table)
+                if self.doserate_table_gpu is not None:
+                    logger.info("선량율 테이블 GPU로 성공적으로 전송됨.")
+                else:
+                    logger.warning("선량율 테이블 GPU 전송 실패.")
+            elif loaded_table is None: # 명시적으로 None을 반환하는 경우 (파일 못찾거나 할때)
+                logger.warning("선량율 테이블 로드 실패 (테이블이 None). GPU 전송 시도 안함.")
+            else: # 로드된 테이블이 비어있는 경우 (size == 0)
+                logger.warning("로드된 선량율 테이블이 비어있습니다. GPU 전송 시도 안함.")
+        except Exception as e:
+            logger.error(f"__init__에서 선량율 테이블 처리 중 오류: {e}")
+            self.doserate_table_gpu = None
+
         logger.info("스캔 시간 계산기 초기화 완료")
     
-    def _load_doserate_table(self) -> np.ndarray:
+    def _load_doserate_table(self) -> Optional[np.ndarray]:
         """선량율 테이블 로드"""
         try:
             if self.doserate_table_path and os.path.exists(self.doserate_table_path):
@@ -82,7 +100,7 @@ class ScanTimeCalculator:
                 return np.array([])
         except Exception as e:
             logger.error(f"선량율 테이블 로드 중 오류: {e}")
-            return np.array([])
+            return None # 오류 발생 시 None 반환
         
     def get_doserate_for_energy(self, energy: float) -> float:
         """
@@ -96,48 +114,39 @@ class ScanTimeCalculator:
         """
         # 이미 계산된 값이 있는지 확인
         if energy in self._energy_to_doserate:
+            logger.debug(f"CPU 캐시에서 에너지 {energy}MeV에 대한 선량율 반환.")
             return self._energy_to_doserate[energy]
-        
-        try:
-            # 선량율 테이블 로드
-            doserate_table = self._load_doserate_table()
-            if doserate_table.size == 0:
-                logger.warning(f"선량율 테이블이 비어있습니다. 에너지 {energy}MeV에 대해 기본값 사용.")
-                return self.min_doserate
-            
-            # GPU로 테이블 전송
-            doserate_gpu = self.gpu_manager.array_to_gpu(doserate_table)
-            if doserate_gpu is None:
-                logger.warning("GPU 변환 실패, CPU로 계산")
-                # CPU 대체 로직
-                mask = (doserate_table[:, 0] >= energy + 0.0) & (doserate_table[:, 0] < energy + 0.3)
-                max_doserate_ind = np.where(mask)[0]
-                if len(max_doserate_ind) > 0:
-                    max_doserate = float(doserate_table[max_doserate_ind[0], 1])
-                    self._energy_to_doserate[energy] = max_doserate
-                    return max_doserate
-                return self.min_doserate
-            
-            # 해당 에너지에 대한 선량율 찾기 (GPU 마스킹 연산)
-            with cp.cuda.Stream():
-                mask = (doserate_gpu[:, 0] >= energy + 0.0) & (doserate_gpu[:, 0] < energy + 0.3)
-                max_doserate_ind = cp.where(mask)[0]
-                
-                if len(max_doserate_ind) > 0:
-                    max_doserate = float(doserate_gpu[max_doserate_ind[0], 1])
-                    # 캐시에 저장
-                    self._energy_to_doserate[energy] = max_doserate
-                    logger.debug(f"GPU - 에너지 {energy}MeV에 대한 선량율: {max_doserate}MU/s")
+
+        # 사전 로드된 GPU 테이블 확인
+        if self.doserate_table_gpu is not None:
+            try:
+                # 해당 에너지에 대한 선량율 찾기 (GPU 마스킹 연산)
+                with cp.cuda.Stream(): # Ensure operations are on the correct stream if manager uses one
+                    mask = (self.doserate_table_gpu[:, 0] >= energy + 0.0) & \
+                           (self.doserate_table_gpu[:, 0] < energy + 0.3)
+                    max_doserate_ind = cp.where(mask)[0]
                     
-                    # GPU 메모리 해제
-                    del doserate_gpu, mask, max_doserate_ind
-                    return max_doserate
-                
-            logger.warning(f"GPU - 에너지 {energy}MeV에 대한 선량율을 찾을 수 없습니다. 기본값 사용.")
-            return self.min_doserate
-            
-        except Exception as e:
-            logger.warning(f"GPU 선량율 계산 실패: {e}. 기본값 사용.")
+                    if len(max_doserate_ind) > 0:
+                        # 첫 번째 매칭되는 값 사용
+                        max_doserate = float(self.doserate_table_gpu[max_doserate_ind[0], 1])
+                        self._energy_to_doserate[energy] = max_doserate # CPU 캐시에 저장
+                        logger.debug(f"GPU 테이블 - 에너지 {energy}MeV에 대한 선량율: {max_doserate}MU/s. CPU 캐시에 저장됨.")
+                        return max_doserate
+                    else:
+                        logger.warning(f"GPU 테이블에서 에너지 {energy}MeV에 대한 선량율을 찾을 수 없습니다. 최소 선량율 사용.")
+                        # 찾지 못한 경우에도 최소 선량율을 캐시할 수 있지만, 일반적으로는 실패 케이스를 캐시하지 않음.
+                        # self._energy_to_doserate[energy] = self.min_doserate
+                        return self.min_doserate
+            except Exception as e:
+                logger.error(f"GPU 테이블에서 선량율 조회 중 오류 발생: {e}. 최소 선량율 사용.")
+                # 오류 발생 시에도 최소 선량율을 캐시할 수 있음.
+                # self._energy_to_doserate[energy] = self.min_doserate
+                return self.min_doserate
+        else:
+            # GPU 테이블이 로드되지 않은 경우
+            logger.warning("사전 로드된 GPU 선량율 테이블을 사용할 수 없습니다. 최소 선량율 사용.")
+            # 이 경우에도 최소 선량율을 캐시할 수 있음.
+            # self._energy_to_doserate[energy] = self.min_doserate
             return self.min_doserate
     
     def calculate_layer_scan_time(self, layer: Layer, DR: Optional[float] = None) -> float:
@@ -384,4 +393,21 @@ class ScanTimeCalculator:
     def clear_caches(self) -> None:
         """캐시 메모리 정리"""
         self._energy_to_doserate.clear()
+
+        # GPU 선량율 테이블 메모리 해제
+        if self.doserate_table_gpu is not None:
+            try:
+                # GPUMemoryManager를 통해 메모리 해제 요청
+                # 참고: GPUMemoryManager에 특정 배열을 해제하는 기능이 없다면,
+                # cupy 배열의 경우 `del self.doserate_table_gpu`가 cupy의 메모리 풀에 의해 관리될 수 있음.
+                # 좀 더 명시적인 해제를 원한다면 GPUMemoryManager에 해당 기능 추가 필요.
+                # 여기서는 일단 None으로 설정하여 참조를 제거하고, clean_memory()가 풀을 정리한다고 가정.
+                del self.doserate_table_gpu # cupy 배열의 경우 del로 메모리 풀에 반환 시도
+                self.doserate_table_gpu = None
+                logger.info("GPU 선량율 테이블 메모리 참조 해제됨.")
+            except Exception as e:
+                logger.error(f"GPU 선량율 테이블 메모리 해제 중 오류: {e}")
+                self.doserate_table_gpu = None # 오류 발생 시에도 None으로 설정
+
         self.gpu_manager.clean_memory()
+        logger.info("모든 캐시 및 GPU 메모리 풀 정리 시도 완료.")
