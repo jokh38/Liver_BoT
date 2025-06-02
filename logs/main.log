@@ -1,0 +1,283 @@
+2025-05-30 21:45:39,232 - __main__ - INFO - 처리 시작: DR_NO(2023).dcm
+2025-05-30 21:45:39,315 - __main__ - INFO - 계산 매개변수: DR=[10, 30, 50, 70, 90, 110, 130, 150, 170], TR=[1.01, 1.21, 1.4100000000000001, 1.61, 1.81, 2.01, 2.21, 2.41, 2.6100000000000003, 2.81, 3.01, 3.21, 3.41, 3.6100000000000003, 3.8100000000000005, 4.01, 4.21, 4.41, 4.61, 4.8100000000000005, 5.01, 5.21, 5.41, 5.61, 5.8100000000000005, 6.01, 6.21, 6.41, 6.61, 6.8100000000000005], amp_g=[0.2], TLS=[0.0, 0.5, 1.0, 1.5, 2.0, 2.5]
+2025-05-30 21:45:39,332 - core.gpu_utils - INFO - GPU 초기화: NVIDIA GeForce RTX 3070
+2025-05-30 21:45:39,332 - core.gpu_utils - INFO - CUDA 코어: 5888
+2025-05-30 21:45:39,387 - core.gpu_utils - INFO - 가용 메모리: 6.93GB
+2025-05-30 21:45:39,387 - core.scan_time_calculator - INFO - 스캔 시간 계산기 초기화 완료
+2025-05-30 21:45:39,387 - core.gpu_utils - INFO - GPU 초기화: NVIDIA GeForce RTX 3070
+2025-05-30 21:45:39,387 - core.gpu_utils - INFO - CUDA 코어: 5888
+2025-05-30 21:45:39,387 - core.gpu_utils - INFO - 가용 메모리: 6.93GB
+2025-05-30 21:45:39,387 - core.treatment_time_calculator - INFO - 치료 시간 계산기 초기화 완료
+2025-05-30 21:45:39,387 - core.gpu_utils - INFO - GPU 초기화: NVIDIA GeForce RTX 3070
+2025-05-30 21:45:39,389 - core.gpu_utils - INFO - CUDA 코어: 5888
+2025-05-30 21:45:39,389 - core.gpu_utils - INFO - 가용 메모리: 6.93GB
+2025-05-30 21:45:39,389 - core.batch_processor - INFO - 배치 처리기 초기화 완료 (스트림: 4, 배치 크기: 400)
+2025-05-30 21:45:39,389 - core.signal_generator - INFO - SignalGenerator 초기화 완료 (시간 해상도: 0.0001초)
+2025-05-30 21:45:39,389 - core.hybrid_implementation - INFO - 하이브리드 구현 초기화 완료
+2025-05-30 21:45:39,389 - __main__ - INFO - 포트 처리 중: Port_1 (레이어 수: 33)
+2025-05-30 21:45:39,389 - __main__ - INFO - GPU 통합 계산 시작 - DR: 9개, TR: 30개, amp_g: 1개, TLS: 6개
+2025-05-30 21:45:39,389 - core.hybrid_implementation - INFO - 통합 배치 계산 시작 - 총 조합 수: 1620
+2025-05-30 21:45:39,389 - core.scan_time_calculator - INFO - GPU 통합 스캔 시간 계산 시작: DR 9개 × 레이어 33개
+2025-05-30 21:45:39,854 - core.scan_time_calculator - INFO - GPU 통합 스캔 시간 계산 완료: (9, 33)
+2025-05-30 21:45:39,854 - core.hybrid_implementation - INFO - 스캔 시간 텐서 생성 완료: (9, 33)
+2025-05-30 21:45:39,874 - core.hybrid_implementation - INFO - 게이팅 주기 정보 생성 완료: 30개
+2025-05-30 21:45:39,875 - core.batch_processor - INFO - 전체 매개변수 공간 처리 시작: 1620개 조합
+2025-05-30 21:45:39,875 - core.batch_processor - INFO - 메모리 분석: 가용=7094.0MB, 필요=0.2MB
+2025-05-30 21:45:39,875 - core.batch_processor - INFO - 최적 배치 크기: 400 (전체 조합 수: 1620)
+2025-05-30 21:45:39,875 - core.batch_processor - INFO - GPU로 스캔 시간 텐서 전송 완료: (9, 33)
+2025-05-30 21:45:39,876 - core.batch_processor - INFO - 배치 분할 완료: 5개 배치, 배치당 평균 324개 조합
+2025-05-30 21:46:53,917 - core.batch_processor - INFO - 전체 매개변수 공간 처리 완료: 1620개 결과 생성
+2025-05-30 21:46:53,917 - core.hybrid_implementation - INFO - 통합 배치 계산 완료: 1620개 결과
+2025-05-30 21:46:53,919 - __main__ - INFO - 포트 Port_1 처리 완료: 1620개 결과 생성
+2025-05-30 21:46:53,919 - __main__ - INFO - 포트 처리 중: Port_2 (레이어 수: 38)
+2025-05-30 21:46:53,920 - __main__ - INFO - GPU 통합 계산 시작 - DR: 9개, TR: 30개, amp_g: 1개, TLS: 6개
+2025-05-30 21:46:53,920 - core.hybrid_implementation - INFO - 통합 배치 계산 시작 - 총 조합 수: 1620
+2025-05-30 21:46:53,920 - core.scan_time_calculator - INFO - GPU 통합 스캔 시간 계산 시작: DR 9개 × 레이어 38개
+2025-05-30 21:46:54,651 - core.scan_time_calculator - INFO - GPU 통합 스캔 시간 계산 완료: (9, 38)
+2025-05-30 21:46:54,651 - core.hybrid_implementation - INFO - 스캔 시간 텐서 생성 완료: (9, 38)
+2025-05-30 21:46:54,671 - core.hybrid_implementation - INFO - 게이팅 주기 정보 생성 완료: 30개
+2025-05-30 21:46:54,671 - core.batch_processor - INFO - 전체 매개변수 공간 처리 시작: 1620개 조합
+2025-05-30 21:46:54,671 - core.batch_processor - INFO - 메모리 분석: 가용=7092.0MB, 필요=0.2MB
+2025-05-30 21:46:54,671 - core.batch_processor - INFO - 최적 배치 크기: 400 (전체 조합 수: 1620)
+2025-05-30 21:46:54,672 - core.batch_processor - INFO - GPU로 스캔 시간 텐서 전송 완료: (9, 38)
+2025-05-30 21:46:54,672 - core.batch_processor - INFO - 배치 분할 완료: 5개 배치, 배치당 평균 324개 조합
+2025-05-30 21:48:39,976 - core.batch_processor - INFO - 전체 매개변수 공간 처리 완료: 1620개 결과 생성
+2025-05-30 21:48:39,976 - core.hybrid_implementation - INFO - 통합 배치 계산 완료: 1620개 결과
+2025-05-30 21:48:39,978 - __main__ - INFO - 포트 Port_2 처리 완료: 1620개 결과 생성
+2025-05-30 21:48:40,000 - __main__ - INFO - 결과 저장 완료: C:\Users\com\OneDrive\2025 작업\Liver_BoT_DR\Final_code\results\DR_NO(2023)_results.csv (3240개 결과)
+2025-05-30 21:48:40,001 - __main__ - INFO - 처리 시작: DR_010(2025).dcm
+2025-05-30 21:48:40,075 - __main__ - INFO - 계산 매개변수: DR=[10, 30, 50, 70, 90, 110, 130, 150, 170], TR=[1.01, 1.21, 1.4100000000000001, 1.61, 1.81, 2.01, 2.21, 2.41, 2.6100000000000003, 2.81, 3.01, 3.21, 3.41, 3.6100000000000003, 3.8100000000000005, 4.01, 4.21, 4.41, 4.61, 4.8100000000000005, 5.01, 5.21, 5.41, 5.61, 5.8100000000000005, 6.01, 6.21, 6.41, 6.61, 6.8100000000000005], amp_g=[0.2], TLS=[0.0, 0.5, 1.0, 1.5, 2.0, 2.5]
+2025-05-30 21:48:40,076 - core.gpu_utils - INFO - GPU 초기화: NVIDIA GeForce RTX 3070
+2025-05-30 21:48:40,076 - core.gpu_utils - INFO - CUDA 코어: 5888
+2025-05-30 21:48:40,076 - core.gpu_utils - INFO - 가용 메모리: 6.93GB
+2025-05-30 21:48:40,077 - core.scan_time_calculator - INFO - 스캔 시간 계산기 초기화 완료
+2025-05-30 21:48:40,077 - core.gpu_utils - INFO - GPU 초기화: NVIDIA GeForce RTX 3070
+2025-05-30 21:48:40,077 - core.gpu_utils - INFO - CUDA 코어: 5888
+2025-05-30 21:48:40,077 - core.gpu_utils - INFO - 가용 메모리: 6.93GB
+2025-05-30 21:48:40,077 - core.treatment_time_calculator - INFO - 치료 시간 계산기 초기화 완료
+2025-05-30 21:48:40,077 - core.gpu_utils - INFO - GPU 초기화: NVIDIA GeForce RTX 3070
+2025-05-30 21:48:40,077 - core.gpu_utils - INFO - CUDA 코어: 5888
+2025-05-30 21:48:40,077 - core.gpu_utils - INFO - 가용 메모리: 6.93GB
+2025-05-30 21:48:40,078 - core.batch_processor - INFO - 배치 처리기 초기화 완료 (스트림: 4, 배치 크기: 400)
+2025-05-30 21:48:40,078 - core.signal_generator - INFO - SignalGenerator 초기화 완료 (시간 해상도: 0.0001초)
+2025-05-30 21:48:40,078 - core.hybrid_implementation - INFO - 하이브리드 구현 초기화 완료
+2025-05-30 21:48:40,078 - __main__ - INFO - 포트 처리 중: Port_1 (레이어 수: 33)
+2025-05-30 21:48:40,078 - __main__ - INFO - GPU 통합 계산 시작 - DR: 9개, TR: 30개, amp_g: 1개, TLS: 6개
+2025-05-30 21:48:40,078 - core.hybrid_implementation - INFO - 통합 배치 계산 시작 - 총 조합 수: 1620
+2025-05-30 21:48:40,078 - core.scan_time_calculator - INFO - GPU 통합 스캔 시간 계산 시작: DR 9개 × 레이어 33개
+2025-05-30 21:48:40,589 - core.scan_time_calculator - INFO - GPU 통합 스캔 시간 계산 완료: (9, 33)
+2025-05-30 21:48:40,589 - core.hybrid_implementation - INFO - 스캔 시간 텐서 생성 완료: (9, 33)
+2025-05-30 21:48:40,609 - core.hybrid_implementation - INFO - 게이팅 주기 정보 생성 완료: 30개
+2025-05-30 21:48:40,609 - core.batch_processor - INFO - 전체 매개변수 공간 처리 시작: 1620개 조합
+2025-05-30 21:48:40,609 - core.batch_processor - INFO - 메모리 분석: 가용=7094.0MB, 필요=0.2MB
+2025-05-30 21:48:40,609 - core.batch_processor - INFO - 최적 배치 크기: 400 (전체 조합 수: 1620)
+2025-05-30 21:48:40,610 - core.batch_processor - INFO - GPU로 스캔 시간 텐서 전송 완료: (9, 33)
+2025-05-30 21:48:40,611 - core.batch_processor - INFO - 배치 분할 완료: 5개 배치, 배치당 평균 324개 조합
+2025-05-30 21:49:44,089 - core.batch_processor - INFO - 전체 매개변수 공간 처리 완료: 1620개 결과 생성
+2025-05-30 21:49:44,090 - core.hybrid_implementation - INFO - 통합 배치 계산 완료: 1620개 결과
+2025-05-30 21:49:44,091 - __main__ - INFO - 포트 Port_1 처리 완료: 1620개 결과 생성
+2025-05-30 21:49:44,091 - __main__ - INFO - 포트 처리 중: Port_2 (레이어 수: 38)
+2025-05-30 21:49:44,091 - __main__ - INFO - GPU 통합 계산 시작 - DR: 9개, TR: 30개, amp_g: 1개, TLS: 6개
+2025-05-30 21:49:44,091 - core.hybrid_implementation - INFO - 통합 배치 계산 시작 - 총 조합 수: 1620
+2025-05-30 21:49:44,091 - core.scan_time_calculator - INFO - GPU 통합 스캔 시간 계산 시작: DR 9개 × 레이어 38개
+2025-05-30 21:49:44,719 - core.scan_time_calculator - INFO - GPU 통합 스캔 시간 계산 완료: (9, 38)
+2025-05-30 21:49:44,719 - core.hybrid_implementation - INFO - 스캔 시간 텐서 생성 완료: (9, 38)
+2025-05-30 21:49:44,739 - core.hybrid_implementation - INFO - 게이팅 주기 정보 생성 완료: 30개
+2025-05-30 21:49:44,739 - core.batch_processor - INFO - 전체 매개변수 공간 처리 시작: 1620개 조합
+2025-05-30 21:49:44,740 - core.batch_processor - INFO - 메모리 분석: 가용=7092.0MB, 필요=0.2MB
+2025-05-30 21:49:44,740 - core.batch_processor - INFO - 최적 배치 크기: 400 (전체 조합 수: 1620)
+2025-05-30 21:49:44,740 - core.batch_processor - INFO - GPU로 스캔 시간 텐서 전송 완료: (9, 38)
+2025-05-30 21:49:44,740 - core.batch_processor - INFO - 배치 분할 완료: 5개 배치, 배치당 평균 324개 조합
+2025-05-30 21:51:04,759 - core.batch_processor - INFO - 전체 매개변수 공간 처리 완료: 1620개 결과 생성
+2025-05-30 21:51:04,759 - core.hybrid_implementation - INFO - 통합 배치 계산 완료: 1620개 결과
+2025-05-30 21:51:04,761 - __main__ - INFO - 포트 Port_2 처리 완료: 1620개 결과 생성
+2025-05-30 21:51:04,780 - __main__ - INFO - 결과 저장 완료: C:\Users\com\OneDrive\2025 작업\Liver_BoT_DR\Final_code\results\DR_010(2025)_results.csv (3240개 결과)
+2025-05-30 21:51:04,780 - __main__ - INFO - 처리 시작: DR_050(2025).dcm
+2025-05-30 21:51:04,848 - __main__ - INFO - 계산 매개변수: DR=[10, 30, 50, 70, 90, 110, 130, 150, 170], TR=[1.01, 1.21, 1.4100000000000001, 1.61, 1.81, 2.01, 2.21, 2.41, 2.6100000000000003, 2.81, 3.01, 3.21, 3.41, 3.6100000000000003, 3.8100000000000005, 4.01, 4.21, 4.41, 4.61, 4.8100000000000005, 5.01, 5.21, 5.41, 5.61, 5.8100000000000005, 6.01, 6.21, 6.41, 6.61, 6.8100000000000005], amp_g=[0.2], TLS=[0.0, 0.5, 1.0, 1.5, 2.0, 2.5]
+2025-05-30 21:51:04,850 - core.gpu_utils - INFO - GPU 초기화: NVIDIA GeForce RTX 3070
+2025-05-30 21:51:04,850 - core.gpu_utils - INFO - CUDA 코어: 5888
+2025-05-30 21:51:04,850 - core.gpu_utils - INFO - 가용 메모리: 6.93GB
+2025-05-30 21:51:04,850 - core.scan_time_calculator - INFO - 스캔 시간 계산기 초기화 완료
+2025-05-30 21:51:04,850 - core.gpu_utils - INFO - GPU 초기화: NVIDIA GeForce RTX 3070
+2025-05-30 21:51:04,851 - core.gpu_utils - INFO - CUDA 코어: 5888
+2025-05-30 21:51:04,851 - core.gpu_utils - INFO - 가용 메모리: 6.93GB
+2025-05-30 21:51:04,851 - core.treatment_time_calculator - INFO - 치료 시간 계산기 초기화 완료
+2025-05-30 21:51:04,851 - core.gpu_utils - INFO - GPU 초기화: NVIDIA GeForce RTX 3070
+2025-05-30 21:51:04,851 - core.gpu_utils - INFO - CUDA 코어: 5888
+2025-05-30 21:51:04,851 - core.gpu_utils - INFO - 가용 메모리: 6.93GB
+2025-05-30 21:51:04,851 - core.batch_processor - INFO - 배치 처리기 초기화 완료 (스트림: 4, 배치 크기: 400)
+2025-05-30 21:51:04,852 - core.signal_generator - INFO - SignalGenerator 초기화 완료 (시간 해상도: 0.0001초)
+2025-05-30 21:51:04,852 - core.hybrid_implementation - INFO - 하이브리드 구현 초기화 완료
+2025-05-30 21:51:04,852 - __main__ - INFO - 포트 처리 중: Port_1 (레이어 수: 33)
+2025-05-30 21:51:04,852 - __main__ - INFO - GPU 통합 계산 시작 - DR: 9개, TR: 30개, amp_g: 1개, TLS: 6개
+2025-05-30 21:51:04,852 - core.hybrid_implementation - INFO - 통합 배치 계산 시작 - 총 조합 수: 1620
+2025-05-30 21:51:04,852 - core.scan_time_calculator - INFO - GPU 통합 스캔 시간 계산 시작: DR 9개 × 레이어 33개
+2025-05-30 21:51:05,338 - core.scan_time_calculator - INFO - GPU 통합 스캔 시간 계산 완료: (9, 33)
+2025-05-30 21:51:05,338 - core.hybrid_implementation - INFO - 스캔 시간 텐서 생성 완료: (9, 33)
+2025-05-30 21:51:05,359 - core.hybrid_implementation - INFO - 게이팅 주기 정보 생성 완료: 30개
+2025-05-30 21:51:05,359 - core.batch_processor - INFO - 전체 매개변수 공간 처리 시작: 1620개 조합
+2025-05-30 21:51:05,359 - core.batch_processor - INFO - 메모리 분석: 가용=7094.0MB, 필요=0.2MB
+2025-05-30 21:51:05,359 - core.batch_processor - INFO - 최적 배치 크기: 400 (전체 조합 수: 1620)
+2025-05-30 21:51:05,359 - core.batch_processor - INFO - GPU로 스캔 시간 텐서 전송 완료: (9, 33)
+2025-05-30 21:51:05,359 - core.batch_processor - INFO - 배치 분할 완료: 5개 배치, 배치당 평균 324개 조합
+2025-05-30 21:52:14,012 - core.batch_processor - INFO - 전체 매개변수 공간 처리 완료: 1620개 결과 생성
+2025-05-30 21:52:14,012 - core.hybrid_implementation - INFO - 통합 배치 계산 완료: 1620개 결과
+2025-05-30 21:52:14,015 - __main__ - INFO - 포트 Port_1 처리 완료: 1620개 결과 생성
+2025-05-30 21:52:14,015 - __main__ - INFO - 포트 처리 중: Port_2 (레이어 수: 38)
+2025-05-30 21:52:14,015 - __main__ - INFO - GPU 통합 계산 시작 - DR: 9개, TR: 30개, amp_g: 1개, TLS: 6개
+2025-05-30 21:52:14,015 - core.hybrid_implementation - INFO - 통합 배치 계산 시작 - 총 조합 수: 1620
+2025-05-30 21:52:14,015 - core.scan_time_calculator - INFO - GPU 통합 스캔 시간 계산 시작: DR 9개 × 레이어 38개
+2025-05-30 21:52:14,649 - core.scan_time_calculator - INFO - GPU 통합 스캔 시간 계산 완료: (9, 38)
+2025-05-30 21:52:14,649 - core.hybrid_implementation - INFO - 스캔 시간 텐서 생성 완료: (9, 38)
+2025-05-30 21:52:14,669 - core.hybrid_implementation - INFO - 게이팅 주기 정보 생성 완료: 30개
+2025-05-30 21:52:14,669 - core.batch_processor - INFO - 전체 매개변수 공간 처리 시작: 1620개 조합
+2025-05-30 21:52:14,670 - core.batch_processor - INFO - 메모리 분석: 가용=7092.0MB, 필요=0.2MB
+2025-05-30 21:52:14,670 - core.batch_processor - INFO - 최적 배치 크기: 400 (전체 조합 수: 1620)
+2025-05-30 21:52:14,670 - core.batch_processor - INFO - GPU로 스캔 시간 텐서 전송 완료: (9, 38)
+2025-05-30 21:52:14,670 - core.batch_processor - INFO - 배치 분할 완료: 5개 배치, 배치당 평균 324개 조합
+2025-05-30 21:53:37,396 - core.batch_processor - INFO - 전체 매개변수 공간 처리 완료: 1620개 결과 생성
+2025-05-30 21:53:37,398 - core.hybrid_implementation - INFO - 통합 배치 계산 완료: 1620개 결과
+2025-05-30 21:53:37,400 - __main__ - INFO - 포트 Port_2 처리 완료: 1620개 결과 생성
+2025-05-30 21:53:37,432 - __main__ - INFO - 결과 저장 완료: C:\Users\com\OneDrive\2025 작업\Liver_BoT_DR\Final_code\results\DR_050(2025)_results.csv (3240개 결과)
+2025-05-30 21:53:37,433 - __main__ - INFO - 처리 시작: DR_100(2025).dcm
+2025-05-30 21:53:37,507 - __main__ - INFO - 계산 매개변수: DR=[10, 30, 50, 70, 90, 110, 130, 150, 170], TR=[1.01, 1.21, 1.4100000000000001, 1.61, 1.81, 2.01, 2.21, 2.41, 2.6100000000000003, 2.81, 3.01, 3.21, 3.41, 3.6100000000000003, 3.8100000000000005, 4.01, 4.21, 4.41, 4.61, 4.8100000000000005, 5.01, 5.21, 5.41, 5.61, 5.8100000000000005, 6.01, 6.21, 6.41, 6.61, 6.8100000000000005], amp_g=[0.2], TLS=[0.0, 0.5, 1.0, 1.5, 2.0, 2.5]
+2025-05-30 21:53:37,509 - core.gpu_utils - INFO - GPU 초기화: NVIDIA GeForce RTX 3070
+2025-05-30 21:53:37,510 - core.gpu_utils - INFO - CUDA 코어: 5888
+2025-05-30 21:53:37,510 - core.gpu_utils - INFO - 가용 메모리: 6.93GB
+2025-05-30 21:53:37,510 - core.scan_time_calculator - INFO - 스캔 시간 계산기 초기화 완료
+2025-05-30 21:53:37,510 - core.gpu_utils - INFO - GPU 초기화: NVIDIA GeForce RTX 3070
+2025-05-30 21:53:37,510 - core.gpu_utils - INFO - CUDA 코어: 5888
+2025-05-30 21:53:37,510 - core.gpu_utils - INFO - 가용 메모리: 6.93GB
+2025-05-30 21:53:37,511 - core.treatment_time_calculator - INFO - 치료 시간 계산기 초기화 완료
+2025-05-30 21:53:37,511 - core.gpu_utils - INFO - GPU 초기화: NVIDIA GeForce RTX 3070
+2025-05-30 21:53:37,511 - core.gpu_utils - INFO - CUDA 코어: 5888
+2025-05-30 21:53:37,511 - core.gpu_utils - INFO - 가용 메모리: 6.93GB
+2025-05-30 21:53:37,511 - core.batch_processor - INFO - 배치 처리기 초기화 완료 (스트림: 4, 배치 크기: 400)
+2025-05-30 21:53:37,511 - core.signal_generator - INFO - SignalGenerator 초기화 완료 (시간 해상도: 0.0001초)
+2025-05-30 21:53:37,511 - core.hybrid_implementation - INFO - 하이브리드 구현 초기화 완료
+2025-05-30 21:53:37,511 - __main__ - INFO - 포트 처리 중: Port_1 (레이어 수: 33)
+2025-05-30 21:53:37,511 - __main__ - INFO - GPU 통합 계산 시작 - DR: 9개, TR: 30개, amp_g: 1개, TLS: 6개
+2025-05-30 21:53:37,511 - core.hybrid_implementation - INFO - 통합 배치 계산 시작 - 총 조합 수: 1620
+2025-05-30 21:53:37,511 - core.scan_time_calculator - INFO - GPU 통합 스캔 시간 계산 시작: DR 9개 × 레이어 33개
+2025-05-30 21:53:38,007 - core.scan_time_calculator - INFO - GPU 통합 스캔 시간 계산 완료: (9, 33)
+2025-05-30 21:53:38,007 - core.hybrid_implementation - INFO - 스캔 시간 텐서 생성 완료: (9, 33)
+2025-05-30 21:53:38,026 - core.hybrid_implementation - INFO - 게이팅 주기 정보 생성 완료: 30개
+2025-05-30 21:53:38,027 - core.batch_processor - INFO - 전체 매개변수 공간 처리 시작: 1620개 조합
+2025-05-30 21:53:38,027 - core.batch_processor - INFO - 메모리 분석: 가용=7094.0MB, 필요=0.2MB
+2025-05-30 21:53:38,027 - core.batch_processor - INFO - 최적 배치 크기: 400 (전체 조합 수: 1620)
+2025-05-30 21:53:38,027 - core.batch_processor - INFO - GPU로 스캔 시간 텐서 전송 완료: (9, 33)
+2025-05-30 21:53:38,027 - core.batch_processor - INFO - 배치 분할 완료: 5개 배치, 배치당 평균 324개 조합
+2025-05-30 21:54:52,201 - core.batch_processor - INFO - 전체 매개변수 공간 처리 완료: 1620개 결과 생성
+2025-05-30 21:54:52,201 - core.hybrid_implementation - INFO - 통합 배치 계산 완료: 1620개 결과
+2025-05-30 21:54:52,203 - __main__ - INFO - 포트 Port_1 처리 완료: 1620개 결과 생성
+2025-05-30 21:54:52,203 - __main__ - INFO - 포트 처리 중: Port_2 (레이어 수: 38)
+2025-05-30 21:54:52,203 - __main__ - INFO - GPU 통합 계산 시작 - DR: 9개, TR: 30개, amp_g: 1개, TLS: 6개
+2025-05-30 21:54:52,204 - core.hybrid_implementation - INFO - 통합 배치 계산 시작 - 총 조합 수: 1620
+2025-05-30 21:54:52,204 - core.scan_time_calculator - INFO - GPU 통합 스캔 시간 계산 시작: DR 9개 × 레이어 38개
+2025-05-30 21:54:52,770 - core.scan_time_calculator - INFO - GPU 통합 스캔 시간 계산 완료: (9, 38)
+2025-05-30 21:54:52,770 - core.hybrid_implementation - INFO - 스캔 시간 텐서 생성 완료: (9, 38)
+2025-05-30 21:54:52,793 - core.hybrid_implementation - INFO - 게이팅 주기 정보 생성 완료: 30개
+2025-05-30 21:54:52,793 - core.batch_processor - INFO - 전체 매개변수 공간 처리 시작: 1620개 조합
+2025-05-30 21:54:52,793 - core.batch_processor - INFO - 메모리 분석: 가용=7092.0MB, 필요=0.2MB
+2025-05-30 21:54:52,793 - core.batch_processor - INFO - 최적 배치 크기: 400 (전체 조합 수: 1620)
+2025-05-30 21:54:52,794 - core.batch_processor - INFO - GPU로 스캔 시간 텐서 전송 완료: (9, 38)
+2025-05-30 21:54:52,794 - core.batch_processor - INFO - 배치 분할 완료: 5개 배치, 배치당 평균 324개 조합
+2025-05-30 21:56:20,186 - core.batch_processor - INFO - 전체 매개변수 공간 처리 완료: 1620개 결과 생성
+2025-05-30 21:56:20,187 - core.hybrid_implementation - INFO - 통합 배치 계산 완료: 1620개 결과
+2025-05-30 21:56:20,189 - __main__ - INFO - 포트 Port_2 처리 완료: 1620개 결과 생성
+2025-05-30 21:56:20,208 - __main__ - INFO - 결과 저장 완료: C:\Users\com\OneDrive\2025 작업\Liver_BoT_DR\Final_code\results\DR_100(2025)_results.csv (3240개 결과)
+2025-05-30 21:56:20,208 - __main__ - INFO - 처리 시작: DR_200(2025).dcm
+2025-05-30 21:56:20,284 - __main__ - INFO - 계산 매개변수: DR=[10, 30, 50, 70, 90, 110, 130, 150, 170], TR=[1.01, 1.21, 1.4100000000000001, 1.61, 1.81, 2.01, 2.21, 2.41, 2.6100000000000003, 2.81, 3.01, 3.21, 3.41, 3.6100000000000003, 3.8100000000000005, 4.01, 4.21, 4.41, 4.61, 4.8100000000000005, 5.01, 5.21, 5.41, 5.61, 5.8100000000000005, 6.01, 6.21, 6.41, 6.61, 6.8100000000000005], amp_g=[0.2], TLS=[0.0, 0.5, 1.0, 1.5, 2.0, 2.5]
+2025-05-30 21:56:20,285 - core.gpu_utils - INFO - GPU 초기화: NVIDIA GeForce RTX 3070
+2025-05-30 21:56:20,285 - core.gpu_utils - INFO - CUDA 코어: 5888
+2025-05-30 21:56:20,285 - core.gpu_utils - INFO - 가용 메모리: 6.93GB
+2025-05-30 21:56:20,285 - core.scan_time_calculator - INFO - 스캔 시간 계산기 초기화 완료
+2025-05-30 21:56:20,285 - core.gpu_utils - INFO - GPU 초기화: NVIDIA GeForce RTX 3070
+2025-05-30 21:56:20,285 - core.gpu_utils - INFO - CUDA 코어: 5888
+2025-05-30 21:56:20,287 - core.gpu_utils - INFO - 가용 메모리: 6.93GB
+2025-05-30 21:56:20,287 - core.treatment_time_calculator - INFO - 치료 시간 계산기 초기화 완료
+2025-05-30 21:56:20,287 - core.gpu_utils - INFO - GPU 초기화: NVIDIA GeForce RTX 3070
+2025-05-30 21:56:20,287 - core.gpu_utils - INFO - CUDA 코어: 5888
+2025-05-30 21:56:20,287 - core.gpu_utils - INFO - 가용 메모리: 6.93GB
+2025-05-30 21:56:20,287 - core.batch_processor - INFO - 배치 처리기 초기화 완료 (스트림: 4, 배치 크기: 400)
+2025-05-30 21:56:20,287 - core.signal_generator - INFO - SignalGenerator 초기화 완료 (시간 해상도: 0.0001초)
+2025-05-30 21:56:20,287 - core.hybrid_implementation - INFO - 하이브리드 구현 초기화 완료
+2025-05-30 21:56:20,287 - __main__ - INFO - 포트 처리 중: Port_1 (레이어 수: 33)
+2025-05-30 21:56:20,287 - __main__ - INFO - GPU 통합 계산 시작 - DR: 9개, TR: 30개, amp_g: 1개, TLS: 6개
+2025-05-30 21:56:20,287 - core.hybrid_implementation - INFO - 통합 배치 계산 시작 - 총 조합 수: 1620
+2025-05-30 21:56:20,288 - core.scan_time_calculator - INFO - GPU 통합 스캔 시간 계산 시작: DR 9개 × 레이어 33개
+2025-05-30 21:56:20,611 - core.scan_time_calculator - INFO - GPU 통합 스캔 시간 계산 완료: (9, 33)
+2025-05-30 21:56:20,611 - core.hybrid_implementation - INFO - 스캔 시간 텐서 생성 완료: (9, 33)
+2025-05-30 21:56:20,632 - core.hybrid_implementation - INFO - 게이팅 주기 정보 생성 완료: 30개
+2025-05-30 21:56:20,633 - core.batch_processor - INFO - 전체 매개변수 공간 처리 시작: 1620개 조합
+2025-05-30 21:56:20,633 - core.batch_processor - INFO - 메모리 분석: 가용=7094.0MB, 필요=0.2MB
+2025-05-30 21:56:20,633 - core.batch_processor - INFO - 최적 배치 크기: 400 (전체 조합 수: 1620)
+2025-05-30 21:56:20,634 - core.batch_processor - INFO - GPU로 스캔 시간 텐서 전송 완료: (9, 33)
+2025-05-30 21:56:20,634 - core.batch_processor - INFO - 배치 분할 완료: 5개 배치, 배치당 평균 324개 조합
+2025-05-30 21:57:31,543 - core.batch_processor - INFO - 전체 매개변수 공간 처리 완료: 1620개 결과 생성
+2025-05-30 21:57:31,543 - core.hybrid_implementation - INFO - 통합 배치 계산 완료: 1620개 결과
+2025-05-30 21:57:31,545 - __main__ - INFO - 포트 Port_1 처리 완료: 1620개 결과 생성
+2025-05-30 21:57:31,545 - __main__ - INFO - 포트 처리 중: Port_2 (레이어 수: 38)
+2025-05-30 21:57:31,545 - __main__ - INFO - GPU 통합 계산 시작 - DR: 9개, TR: 30개, amp_g: 1개, TLS: 6개
+2025-05-30 21:57:31,545 - core.hybrid_implementation - INFO - 통합 배치 계산 시작 - 총 조합 수: 1620
+2025-05-30 21:57:31,545 - core.scan_time_calculator - INFO - GPU 통합 스캔 시간 계산 시작: DR 9개 × 레이어 38개
+2025-05-30 21:57:32,046 - core.scan_time_calculator - INFO - GPU 통합 스캔 시간 계산 완료: (9, 38)
+2025-05-30 21:57:32,046 - core.hybrid_implementation - INFO - 스캔 시간 텐서 생성 완료: (9, 38)
+2025-05-30 21:57:32,066 - core.hybrid_implementation - INFO - 게이팅 주기 정보 생성 완료: 30개
+2025-05-30 21:57:32,068 - core.batch_processor - INFO - 전체 매개변수 공간 처리 시작: 1620개 조합
+2025-05-30 21:57:32,068 - core.batch_processor - INFO - 메모리 분석: 가용=7092.0MB, 필요=0.2MB
+2025-05-30 21:57:32,068 - core.batch_processor - INFO - 최적 배치 크기: 400 (전체 조합 수: 1620)
+2025-05-30 21:57:32,068 - core.batch_processor - INFO - GPU로 스캔 시간 텐서 전송 완료: (9, 38)
+2025-05-30 21:57:32,068 - core.batch_processor - INFO - 배치 분할 완료: 5개 배치, 배치당 평균 324개 조합
+2025-05-30 21:59:01,723 - core.batch_processor - INFO - 전체 매개변수 공간 처리 완료: 1620개 결과 생성
+2025-05-30 21:59:01,723 - core.hybrid_implementation - INFO - 통합 배치 계산 완료: 1620개 결과
+2025-05-30 21:59:01,725 - __main__ - INFO - 포트 Port_2 처리 완료: 1620개 결과 생성
+2025-05-30 21:59:01,742 - __main__ - INFO - 결과 저장 완료: C:\Users\com\OneDrive\2025 작업\Liver_BoT_DR\Final_code\results\DR_200(2025)_results.csv (3240개 결과)
+2025-05-30 21:59:01,742 - __main__ - INFO - 처리 시작: DR_NO(2023).dcm
+2025-05-30 21:59:01,812 - __main__ - INFO - 계산 매개변수: DR=[10, 30, 50, 70, 90, 110, 130, 150, 170], TR=[1.01, 1.21, 1.4100000000000001, 1.61, 1.81, 2.01, 2.21, 2.41, 2.6100000000000003, 2.81, 3.01, 3.21, 3.41, 3.6100000000000003, 3.8100000000000005, 4.01, 4.21, 4.41, 4.61, 4.8100000000000005, 5.01, 5.21, 5.41, 5.61, 5.8100000000000005, 6.01, 6.21, 6.41, 6.61, 6.8100000000000005], amp_g=[0.2], TLS=[0.0, 0.5, 1.0, 1.5, 2.0, 2.5]
+2025-05-30 21:59:01,813 - core.gpu_utils - INFO - GPU 초기화: NVIDIA GeForce RTX 3070
+2025-05-30 21:59:01,813 - core.gpu_utils - INFO - CUDA 코어: 5888
+2025-05-30 21:59:01,813 - core.gpu_utils - INFO - 가용 메모리: 6.93GB
+2025-05-30 21:59:01,813 - core.scan_time_calculator - INFO - 스캔 시간 계산기 초기화 완료
+2025-05-30 21:59:01,813 - core.gpu_utils - INFO - GPU 초기화: NVIDIA GeForce RTX 3070
+2025-05-30 21:59:01,813 - core.gpu_utils - INFO - CUDA 코어: 5888
+2025-05-30 21:59:01,813 - core.gpu_utils - INFO - 가용 메모리: 6.93GB
+2025-05-30 21:59:01,813 - core.treatment_time_calculator - INFO - 치료 시간 계산기 초기화 완료
+2025-05-30 21:59:01,813 - core.gpu_utils - INFO - GPU 초기화: NVIDIA GeForce RTX 3070
+2025-05-30 21:59:01,813 - core.gpu_utils - INFO - CUDA 코어: 5888
+2025-05-30 21:59:01,813 - core.gpu_utils - INFO - 가용 메모리: 6.93GB
+2025-05-30 21:59:01,813 - core.batch_processor - INFO - 배치 처리기 초기화 완료 (스트림: 4, 배치 크기: 400)
+2025-05-30 21:59:01,813 - core.signal_generator - INFO - SignalGenerator 초기화 완료 (시간 해상도: 0.0001초)
+2025-05-30 21:59:01,813 - core.hybrid_implementation - INFO - 하이브리드 구현 초기화 완료
+2025-05-30 21:59:01,814 - __main__ - INFO - 포트 처리 중: Port_1 (레이어 수: 33)
+2025-05-30 21:59:01,814 - __main__ - INFO - GPU 통합 계산 시작 - DR: 9개, TR: 30개, amp_g: 1개, TLS: 6개
+2025-05-30 21:59:01,814 - core.hybrid_implementation - INFO - 통합 배치 계산 시작 - 총 조합 수: 1620
+2025-05-30 21:59:01,814 - core.scan_time_calculator - INFO - GPU 통합 스캔 시간 계산 시작: DR 9개 × 레이어 33개
+2025-05-30 21:59:02,364 - core.scan_time_calculator - INFO - GPU 통합 스캔 시간 계산 완료: (9, 33)
+2025-05-30 21:59:02,364 - core.hybrid_implementation - INFO - 스캔 시간 텐서 생성 완료: (9, 33)
+2025-05-30 21:59:02,384 - core.hybrid_implementation - INFO - 게이팅 주기 정보 생성 완료: 30개
+2025-05-30 21:59:02,384 - core.batch_processor - INFO - 전체 매개변수 공간 처리 시작: 1620개 조합
+2025-05-30 21:59:02,385 - core.batch_processor - INFO - 메모리 분석: 가용=7094.0MB, 필요=0.2MB
+2025-05-30 21:59:02,385 - core.batch_processor - INFO - 최적 배치 크기: 400 (전체 조합 수: 1620)
+2025-05-30 21:59:02,385 - core.batch_processor - INFO - GPU로 스캔 시간 텐서 전송 완료: (9, 33)
+2025-05-30 21:59:02,385 - core.batch_processor - INFO - 배치 분할 완료: 5개 배치, 배치당 평균 324개 조합
+2025-05-30 22:00:15,460 - core.batch_processor - INFO - 전체 매개변수 공간 처리 완료: 1620개 결과 생성
+2025-05-30 22:00:15,460 - core.hybrid_implementation - INFO - 통합 배치 계산 완료: 1620개 결과
+2025-05-30 22:00:15,462 - __main__ - INFO - 포트 Port_1 처리 완료: 1620개 결과 생성
+2025-05-30 22:00:15,462 - __main__ - INFO - 포트 처리 중: Port_2 (레이어 수: 38)
+2025-05-30 22:00:15,462 - __main__ - INFO - GPU 통합 계산 시작 - DR: 9개, TR: 30개, amp_g: 1개, TLS: 6개
+2025-05-30 22:00:15,462 - core.hybrid_implementation - INFO - 통합 배치 계산 시작 - 총 조합 수: 1620
+2025-05-30 22:00:15,462 - core.scan_time_calculator - INFO - GPU 통합 스캔 시간 계산 시작: DR 9개 × 레이어 38개
+2025-05-30 22:00:15,963 - core.scan_time_calculator - INFO - GPU 통합 스캔 시간 계산 완료: (9, 38)
+2025-05-30 22:00:15,963 - core.hybrid_implementation - INFO - 스캔 시간 텐서 생성 완료: (9, 38)
+2025-05-30 22:00:15,983 - core.hybrid_implementation - INFO - 게이팅 주기 정보 생성 완료: 30개
+2025-05-30 22:00:15,984 - core.batch_processor - INFO - 전체 매개변수 공간 처리 시작: 1620개 조합
+2025-05-30 22:00:15,984 - core.batch_processor - INFO - 메모리 분석: 가용=7094.0MB, 필요=0.2MB
+2025-05-30 22:00:15,984 - core.batch_processor - INFO - 최적 배치 크기: 400 (전체 조합 수: 1620)
+2025-05-30 22:00:15,984 - core.batch_processor - INFO - GPU로 스캔 시간 텐서 전송 완료: (9, 38)
+2025-05-30 22:00:15,984 - core.batch_processor - INFO - 배치 분할 완료: 5개 배치, 배치당 평균 324개 조합
+2025-05-30 22:01:49,412 - core.batch_processor - INFO - 전체 매개변수 공간 처리 완료: 1620개 결과 생성
+2025-05-30 22:01:49,412 - core.hybrid_implementation - INFO - 통합 배치 계산 완료: 1620개 결과
+2025-05-30 22:01:49,414 - __main__ - INFO - 포트 Port_2 처리 완료: 1620개 결과 생성
+2025-05-30 22:01:49,432 - __main__ - INFO - 결과 저장 완료: C:\Users\com\OneDrive\2025 작업\Liver_BoT_DR\Final_code\results\DR_NO(2023)_results.csv (3240개 결과)
+2025-05-30 22:01:49,433 - __main__ - INFO - 전체 처리 완료: 6개 파일, 19440개 결과 생성

@@ -1,0 +1,330 @@
+2025-05-26 14:43:01,058 - __main__ - INFO - DICOM 파일 로드 중: ./data/RP_74102.dcm
+2025-05-26 14:43:01,098 - __main__ - INFO - 레이어 185.60MeV, dr_machine: 20.00MU/s, dr_old: 20.00MU/s,, dr_max: 586.66MU/s,  dr_corr_DR: 20.00MU/s, T_scan: 0.11s
+2025-05-26 14:43:01,100 - __main__ - INFO - 레이어 182.00MeV, dr_machine: 20.00MU/s, dr_old: 20.00MU/s,, dr_max: 865.41MU/s,  dr_corr_DR: 20.00MU/s, T_scan: 0.60s
+2025-05-26 14:43:01,101 - __main__ - INFO - 레이어 178.40MeV, dr_machine: 20.00MU/s, dr_old: 20.00MU/s,, dr_max: 937.76MU/s,  dr_corr_DR: 20.00MU/s, T_scan: 0.84s
+2025-05-26 14:43:01,102 - __main__ - INFO - 레이어 175.20MeV, dr_machine: 20.00MU/s, dr_old: 20.00MU/s,, dr_max: 852.72MU/s,  dr_corr_DR: 20.00MU/s, T_scan: 0.60s
+2025-05-26 14:43:01,103 - __main__ - INFO - 레이어 172.00MeV, dr_machine: 20.00MU/s, dr_old: 20.00MU/s,, dr_max: 887.84MU/s,  dr_corr_DR: 20.00MU/s, T_scan: 0.51s
+2025-05-26 14:43:01,104 - __main__ - INFO - 레이어 168.80MeV, dr_machine: 20.00MU/s, dr_old: 20.00MU/s,, dr_max: 842.85MU/s,  dr_corr_DR: 20.00MU/s, T_scan: 0.45s
+2025-05-26 14:43:01,105 - __main__ - INFO - 레이어 165.60MeV, dr_machine: 20.00MU/s, dr_old: 20.00MU/s,, dr_max: 705.41MU/s,  dr_corr_DR: 20.00MU/s, T_scan: 0.34s
+2025-05-26 14:43:01,106 - __main__ - INFO - 레이어 162.40MeV, dr_machine: 20.00MU/s, dr_old: 20.00MU/s,, dr_max: 759.24MU/s,  dr_corr_DR: 20.00MU/s, T_scan: 0.36s
+2025-05-26 14:43:01,107 - __main__ - INFO - 레이어 159.20MeV, dr_machine: 20.00MU/s, dr_old: 20.00MU/s,, dr_max: 1011.50MU/s,  dr_corr_DR: 20.00MU/s, T_scan: 0.39s
+2025-05-26 14:43:01,108 - __main__ - INFO - 레이어 156.00MeV, dr_machine: 20.00MU/s, dr_old: 20.00MU/s,, dr_max: 930.20MU/s,  dr_corr_DR: 20.00MU/s, T_scan: 0.44s
+2025-05-26 14:43:01,109 - __main__ - INFO - 레이어 152.80MeV, dr_machine: 20.00MU/s, dr_old: 20.00MU/s,, dr_max: 921.86MU/s,  dr_corr_DR: 20.00MU/s, T_scan: 0.40s
+2025-05-26 14:43:01,110 - __main__ - INFO - 레이어 150.00MeV, dr_machine: 20.00MU/s, dr_old: 20.00MU/s,, dr_max: 894.18MU/s,  dr_corr_DR: 20.00MU/s, T_scan: 0.31s
+2025-05-26 14:43:01,111 - __main__ - INFO - 레이어 147.20MeV, dr_machine: 20.00MU/s, dr_old: 20.00MU/s,, dr_max: 807.66MU/s,  dr_corr_DR: 20.00MU/s, T_scan: 0.29s
+2025-05-26 14:43:01,112 - __main__ - INFO - 레이어 144.40MeV, dr_machine: 19.53MU/s, dr_old: 19.53MU/s,, dr_max: 976.52MU/s,  dr_corr_DR: 19.53MU/s, T_scan: 0.28s
+2025-05-26 14:43:01,113 - __main__ - INFO - 레이어 141.60MeV, dr_machine: 17.24MU/s, dr_old: 17.24MU/s,, dr_max: 755.36MU/s,  dr_corr_DR: 17.24MU/s, T_scan: 0.29s
+2025-05-26 14:43:01,114 - __main__ - INFO - 레이어 138.80MeV, dr_machine: 16.09MU/s, dr_old: 16.09MU/s,, dr_max: 848.06MU/s,  dr_corr_DR: 16.09MU/s, T_scan: 0.27s
+2025-05-26 14:43:01,115 - __main__ - INFO - 레이어 136.00MeV, dr_machine: 14.94MU/s, dr_old: 14.94MU/s,, dr_max: 605.79MU/s,  dr_corr_DR: 14.94MU/s, T_scan: 0.25s
+2025-05-26 14:43:01,117 - __main__ - INFO - 레이어 133.20MeV, dr_machine: 13.79MU/s, dr_old: 13.79MU/s,, dr_max: 447.76MU/s,  dr_corr_DR: 13.79MU/s, T_scan: 0.20s
+2025-05-26 14:43:01,118 - __main__ - INFO - 레이어 130.40MeV, dr_machine: 12.64MU/s, dr_old: 12.64MU/s,, dr_max: 871.04MU/s,  dr_corr_DR: 12.64MU/s, T_scan: 0.18s
+2025-05-26 14:43:01,118 - __main__ - INFO - 레이어 128.00MeV, dr_machine: 11.49MU/s, dr_old: 11.49MU/s,, dr_max: 453.67MU/s,  dr_corr_DR: 11.49MU/s, T_scan: 0.12s
+2025-05-26 14:43:01,119 - __main__ - INFO - 레이어 125.60MeV, dr_machine: 10.80MU/s, dr_old: 10.80MU/s,, dr_max: 398.24MU/s,  dr_corr_DR: 10.80MU/s, T_scan: 0.10s
+2025-05-26 14:43:01,120 - __main__ - INFO - 레이어 123.20MeV, dr_machine: 10.80MU/s, dr_old: 10.80MU/s,, dr_max: 361.64MU/s,  dr_corr_DR: 10.80MU/s, T_scan: 0.08s
+2025-05-26 14:43:01,121 - __main__ - INFO - 레이어 120.80MeV, dr_machine: 9.90MU/s, dr_old: 9.90MU/s,, dr_max: 211.21MU/s,  dr_corr_DR: 9.90MU/s, T_scan: 0.06s
+2025-05-26 14:43:01,122 - __main__ - INFO - 레이어 118.40MeV, dr_machine: 9.19MU/s, dr_old: 6.66MU/s,, dr_max: 31.07MU/s,  dr_corr_DR: 6.66MU/s, T_scan: 0.00s
+2025-05-26 14:43:01,123 - __main__ - INFO - 레이어 116.00MeV, dr_machine: 9.19MU/s, dr_old: 9.19MU/s,, dr_max: 921.79MU/s,  dr_corr_DR: 9.19MU/s, T_scan: 0.13s
+2025-05-26 14:43:01,123 - __main__ - INFO - 레이어 113.60MeV, dr_machine: 9.19MU/s, dr_old: 9.19MU/s,, dr_max: 472.42MU/s,  dr_corr_DR: 9.19MU/s, T_scan: 0.03s
+2025-05-26 14:43:01,123 - __main__ - INFO - 호흡/게이팅 신호 생성 중 (주기: 4.0초, 진폭: 0.2)
+2025-05-26 14:43:01,127 - __main__ - INFO - 빔 조사 시간 시뮬레이션 중 (레이어 전환 시간: 2.0초)
+2025-05-26 14:43:01,127 - __main__ - INFO - T_on: 1.9357000000000002, T_off: 2.0643, T_total: 4.0
+2025-05-26 14:43:01,128 - __main__ - INFO - 처리 완료 - 총 치료 시간: 98.57초
+2025-05-26 14:43:01,606 - __main__ - INFO - 그래프가 저장되었습니다: output_plots\Port_0-TLS_2.0-TR_4.0-Amp_0.2-DR_20.jpg
+
+2025-05-26 14:43:01,682 - __main__ - INFO - DICOM 파일 로드 중: ./data/RP_74102.dcm
+2025-05-26 14:43:01,718 - __main__ - INFO - 레이어 185.60MeV, dr_machine: 20.00MU/s, dr_old: 14.67MU/s,, dr_max: 586.66MU/s,  dr_corr_DR: 14.67MU/s, T_scan: 0.14s
+2025-05-26 14:43:01,719 - __main__ - INFO - 레이어 182.00MeV, dr_machine: 20.00MU/s, dr_old: 20.00MU/s,, dr_max: 865.41MU/s,  dr_corr_DR: 20.00MU/s, T_scan: 0.60s
+2025-05-26 14:43:01,720 - __main__ - INFO - 레이어 178.40MeV, dr_machine: 20.00MU/s, dr_old: 20.00MU/s,, dr_max: 937.76MU/s,  dr_corr_DR: 20.00MU/s, T_scan: 0.84s
+2025-05-26 14:43:01,720 - __main__ - INFO - 레이어 175.20MeV, dr_machine: 20.00MU/s, dr_old: 20.00MU/s,, dr_max: 852.72MU/s,  dr_corr_DR: 20.00MU/s, T_scan: 0.60s
+2025-05-26 14:43:01,721 - __main__ - INFO - 레이어 172.00MeV, dr_machine: 20.00MU/s, dr_old: 20.00MU/s,, dr_max: 887.84MU/s,  dr_corr_DR: 20.00MU/s, T_scan: 0.51s
+2025-05-26 14:43:01,722 - __main__ - INFO - 레이어 168.80MeV, dr_machine: 20.00MU/s, dr_old: 20.00MU/s,, dr_max: 842.85MU/s,  dr_corr_DR: 20.00MU/s, T_scan: 0.45s
+2025-05-26 14:43:01,723 - __main__ - INFO - 레이어 165.60MeV, dr_machine: 20.00MU/s, dr_old: 17.64MU/s,, dr_max: 705.41MU/s,  dr_corr_DR: 17.64MU/s, T_scan: 0.39s
+2025-05-26 14:43:01,724 - __main__ - INFO - 레이어 162.40MeV, dr_machine: 20.00MU/s, dr_old: 18.98MU/s,, dr_max: 759.24MU/s,  dr_corr_DR: 18.98MU/s, T_scan: 0.38s
+2025-05-26 14:43:01,724 - __main__ - INFO - 레이어 159.20MeV, dr_machine: 20.00MU/s, dr_old: 20.00MU/s,, dr_max: 1011.50MU/s,  dr_corr_DR: 20.00MU/s, T_scan: 0.39s
+2025-05-26 14:43:01,725 - __main__ - INFO - 레이어 156.00MeV, dr_machine: 20.00MU/s, dr_old: 20.00MU/s,, dr_max: 930.20MU/s,  dr_corr_DR: 20.00MU/s, T_scan: 0.44s
+2025-05-26 14:43:01,726 - __main__ - INFO - 레이어 152.80MeV, dr_machine: 20.00MU/s, dr_old: 20.00MU/s,, dr_max: 921.86MU/s,  dr_corr_DR: 20.00MU/s, T_scan: 0.40s
+2025-05-26 14:43:01,726 - __main__ - INFO - 레이어 150.00MeV, dr_machine: 20.00MU/s, dr_old: 20.00MU/s,, dr_max: 894.18MU/s,  dr_corr_DR: 20.00MU/s, T_scan: 0.31s
+2025-05-26 14:43:01,727 - __main__ - INFO - 레이어 147.20MeV, dr_machine: 20.00MU/s, dr_old: 20.00MU/s,, dr_max: 807.66MU/s,  dr_corr_DR: 20.00MU/s, T_scan: 0.29s
+2025-05-26 14:43:01,728 - __main__ - INFO - 레이어 144.40MeV, dr_machine: 19.53MU/s, dr_old: 19.53MU/s,, dr_max: 976.52MU/s,  dr_corr_DR: 19.53MU/s, T_scan: 0.28s
+2025-05-26 14:43:01,728 - __main__ - INFO - 레이어 141.60MeV, dr_machine: 17.24MU/s, dr_old: 17.24MU/s,, dr_max: 755.36MU/s,  dr_corr_DR: 17.24MU/s, T_scan: 0.29s
+2025-05-26 14:43:01,729 - __main__ - INFO - 레이어 138.80MeV, dr_machine: 16.09MU/s, dr_old: 16.09MU/s,, dr_max: 848.06MU/s,  dr_corr_DR: 16.09MU/s, T_scan: 0.27s
+2025-05-26 14:43:01,730 - __main__ - INFO - 레이어 136.00MeV, dr_machine: 14.94MU/s, dr_old: 14.94MU/s,, dr_max: 605.79MU/s,  dr_corr_DR: 14.94MU/s, T_scan: 0.25s
+2025-05-26 14:43:01,731 - __main__ - INFO - 레이어 133.20MeV, dr_machine: 13.79MU/s, dr_old: 11.19MU/s,, dr_max: 447.76MU/s,  dr_corr_DR: 11.19MU/s, T_scan: 0.24s
+2025-05-26 14:43:01,731 - __main__ - INFO - 레이어 130.40MeV, dr_machine: 12.64MU/s, dr_old: 12.64MU/s,, dr_max: 871.04MU/s,  dr_corr_DR: 12.64MU/s, T_scan: 0.18s
+2025-05-26 14:43:01,733 - __main__ - INFO - 레이어 128.00MeV, dr_machine: 11.49MU/s, dr_old: 11.34MU/s,, dr_max: 453.67MU/s,  dr_corr_DR: 11.34MU/s, T_scan: 0.12s
+2025-05-26 14:43:01,733 - __main__ - INFO - 레이어 125.60MeV, dr_machine: 10.80MU/s, dr_old: 9.96MU/s,, dr_max: 398.24MU/s,  dr_corr_DR: 9.96MU/s, T_scan: 0.11s
+2025-05-26 14:43:01,734 - __main__ - INFO - 레이어 123.20MeV, dr_machine: 10.80MU/s, dr_old: 9.04MU/s,, dr_max: 361.64MU/s,  dr_corr_DR: 9.04MU/s, T_scan: 0.09s
+2025-05-26 14:43:01,735 - __main__ - INFO - 레이어 120.80MeV, dr_machine: 9.90MU/s, dr_old: 5.28MU/s,, dr_max: 211.21MU/s,  dr_corr_DR: 5.28MU/s, T_scan: 0.10s
+2025-05-26 14:43:01,735 - __main__ - INFO - 레이어 118.40MeV, dr_machine: 9.19MU/s, dr_old: 6.66MU/s,, dr_max: 31.07MU/s,  dr_corr_DR: 6.66MU/s, T_scan: 0.00s
+2025-05-26 14:43:01,736 - __main__ - INFO - 레이어 116.00MeV, dr_machine: 9.19MU/s, dr_old: 9.19MU/s,, dr_max: 921.79MU/s,  dr_corr_DR: 9.19MU/s, T_scan: 0.13s
+2025-05-26 14:43:01,737 - __main__ - INFO - 레이어 113.60MeV, dr_machine: 9.19MU/s, dr_old: 9.19MU/s,, dr_max: 472.42MU/s,  dr_corr_DR: 9.19MU/s, T_scan: 0.03s
+2025-05-26 14:43:01,737 - __main__ - INFO - 호흡/게이팅 신호 생성 중 (주기: 4.0초, 진폭: 0.2)
+2025-05-26 14:43:01,739 - __main__ - INFO - 빔 조사 시간 시뮬레이션 중 (레이어 전환 시간: 2.0초)
+2025-05-26 14:43:01,739 - __main__ - INFO - T_on: 1.9357000000000002, T_off: 2.0643, T_total: 4.0
+2025-05-26 14:43:01,739 - __main__ - INFO - 처리 완료 - 총 치료 시간: 98.57초
+2025-05-26 14:43:01,962 - __main__ - INFO - 그래프가 저장되었습니다: output_plots\Port_0-TLS_2.0-TR_4.0-Amp_0.2-DR_40.jpg
+
+2025-05-26 14:43:02,035 - __main__ - INFO - DICOM 파일 로드 중: ./data/RP_74102.dcm
+2025-05-26 14:43:02,074 - __main__ - INFO - 레이어 185.60MeV, dr_machine: 20.00MU/s, dr_old: 9.78MU/s,, dr_max: 586.66MU/s,  dr_corr_DR: 9.78MU/s, T_scan: 0.21s
+2025-05-26 14:43:02,074 - __main__ - INFO - 레이어 182.00MeV, dr_machine: 20.00MU/s, dr_old: 14.42MU/s,, dr_max: 865.41MU/s,  dr_corr_DR: 14.42MU/s, T_scan: 0.83s
+2025-05-26 14:43:02,076 - __main__ - INFO - 레이어 178.40MeV, dr_machine: 20.00MU/s, dr_old: 15.63MU/s,, dr_max: 937.76MU/s,  dr_corr_DR: 15.63MU/s, T_scan: 1.07s
+2025-05-26 14:43:02,077 - __main__ - INFO - 레이어 175.20MeV, dr_machine: 20.00MU/s, dr_old: 14.21MU/s,, dr_max: 852.72MU/s,  dr_corr_DR: 14.21MU/s, T_scan: 0.84s
+2025-05-26 14:43:02,078 - __main__ - INFO - 레이어 172.00MeV, dr_machine: 20.00MU/s, dr_old: 14.80MU/s,, dr_max: 887.84MU/s,  dr_corr_DR: 14.80MU/s, T_scan: 0.69s
+2025-05-26 14:43:02,080 - __main__ - INFO - 레이어 168.80MeV, dr_machine: 20.00MU/s, dr_old: 14.05MU/s,, dr_max: 842.85MU/s,  dr_corr_DR: 14.05MU/s, T_scan: 0.63s
+2025-05-26 14:43:02,081 - __main__ - INFO - 레이어 165.60MeV, dr_machine: 20.00MU/s, dr_old: 11.76MU/s,, dr_max: 705.41MU/s,  dr_corr_DR: 11.76MU/s, T_scan: 0.57s
+2025-05-26 14:43:02,082 - __main__ - INFO - 레이어 162.40MeV, dr_machine: 20.00MU/s, dr_old: 12.65MU/s,, dr_max: 759.24MU/s,  dr_corr_DR: 12.65MU/s, T_scan: 0.56s
+2025-05-26 14:43:02,084 - __main__ - INFO - 레이어 159.20MeV, dr_machine: 20.00MU/s, dr_old: 16.86MU/s,, dr_max: 1011.50MU/s,  dr_corr_DR: 16.86MU/s, T_scan: 0.46s
+2025-05-26 14:43:02,085 - __main__ - INFO - 레이어 156.00MeV, dr_machine: 20.00MU/s, dr_old: 15.50MU/s,, dr_max: 930.20MU/s,  dr_corr_DR: 15.50MU/s, T_scan: 0.57s
+2025-05-26 14:43:02,086 - __main__ - INFO - 레이어 152.80MeV, dr_machine: 20.00MU/s, dr_old: 15.36MU/s,, dr_max: 921.86MU/s,  dr_corr_DR: 15.36MU/s, T_scan: 0.51s
+2025-05-26 14:43:02,087 - __main__ - INFO - 레이어 150.00MeV, dr_machine: 20.00MU/s, dr_old: 14.90MU/s,, dr_max: 894.18MU/s,  dr_corr_DR: 14.90MU/s, T_scan: 0.40s
+2025-05-26 14:43:02,088 - __main__ - INFO - 레이어 147.20MeV, dr_machine: 20.00MU/s, dr_old: 13.46MU/s,, dr_max: 807.66MU/s,  dr_corr_DR: 13.46MU/s, T_scan: 0.41s
+2025-05-26 14:43:02,089 - __main__ - INFO - 레이어 144.40MeV, dr_machine: 19.53MU/s, dr_old: 16.28MU/s,, dr_max: 976.52MU/s,  dr_corr_DR: 16.28MU/s, T_scan: 0.33s
+2025-05-26 14:43:02,090 - __main__ - INFO - 레이어 141.60MeV, dr_machine: 17.24MU/s, dr_old: 12.59MU/s,, dr_max: 755.36MU/s,  dr_corr_DR: 12.59MU/s, T_scan: 0.38s
+2025-05-26 14:43:02,091 - __main__ - INFO - 레이어 138.80MeV, dr_machine: 16.09MU/s, dr_old: 14.13MU/s,, dr_max: 848.06MU/s,  dr_corr_DR: 14.13MU/s, T_scan: 0.31s
+2025-05-26 14:43:02,092 - __main__ - INFO - 레이어 136.00MeV, dr_machine: 14.94MU/s, dr_old: 10.10MU/s,, dr_max: 605.79MU/s,  dr_corr_DR: 10.10MU/s, T_scan: 0.36s
+2025-05-26 14:43:02,093 - __main__ - INFO - 레이어 133.20MeV, dr_machine: 13.79MU/s, dr_old: 7.46MU/s,, dr_max: 447.76MU/s,  dr_corr_DR: 7.46MU/s, T_scan: 0.35s
+2025-05-26 14:43:02,095 - __main__ - INFO - 레이어 130.40MeV, dr_machine: 12.64MU/s, dr_old: 12.64MU/s,, dr_max: 871.04MU/s,  dr_corr_DR: 12.64MU/s, T_scan: 0.18s
+2025-05-26 14:43:02,096 - __main__ - INFO - 레이어 128.00MeV, dr_machine: 11.49MU/s, dr_old: 7.56MU/s,, dr_max: 453.67MU/s,  dr_corr_DR: 7.56MU/s, T_scan: 0.18s
+2025-05-26 14:43:02,097 - __main__ - INFO - 레이어 125.60MeV, dr_machine: 10.80MU/s, dr_old: 6.64MU/s,, dr_max: 398.24MU/s,  dr_corr_DR: 6.64MU/s, T_scan: 0.16s
+2025-05-26 14:43:02,098 - __main__ - INFO - 레이어 123.20MeV, dr_machine: 10.80MU/s, dr_old: 6.03MU/s,, dr_max: 361.64MU/s,  dr_corr_DR: 6.03MU/s, T_scan: 0.13s
+2025-05-26 14:43:02,100 - __main__ - INFO - 레이어 120.80MeV, dr_machine: 9.90MU/s, dr_old: 3.52MU/s,, dr_max: 211.21MU/s,  dr_corr_DR: 3.52MU/s, T_scan: 0.15s
+2025-05-26 14:43:02,101 - __main__ - INFO - 레이어 118.40MeV, dr_machine: 9.19MU/s, dr_old: 6.66MU/s,, dr_max: 31.07MU/s,  dr_corr_DR: 6.66MU/s, T_scan: 0.00s
+2025-05-26 14:43:02,102 - __main__ - INFO - 레이어 116.00MeV, dr_machine: 9.19MU/s, dr_old: 9.19MU/s,, dr_max: 921.79MU/s,  dr_corr_DR: 9.19MU/s, T_scan: 0.13s
+2025-05-26 14:43:02,104 - __main__ - INFO - 레이어 113.60MeV, dr_machine: 9.19MU/s, dr_old: 7.87MU/s,, dr_max: 472.42MU/s,  dr_corr_DR: 7.87MU/s, T_scan: 0.04s
+2025-05-26 14:43:02,104 - __main__ - INFO - 호흡/게이팅 신호 생성 중 (주기: 4.0초, 진폭: 0.2)
+2025-05-26 14:43:02,107 - __main__ - INFO - 빔 조사 시간 시뮬레이션 중 (레이어 전환 시간: 2.0초)
+2025-05-26 14:43:02,107 - __main__ - INFO - T_on: 1.9357000000000002, T_off: 2.0643, T_total: 4.0
+2025-05-26 14:43:02,107 - __main__ - INFO - 처리 완료 - 총 치료 시간: 98.57초
+2025-05-26 14:43:02,313 - __main__ - INFO - 그래프가 저장되었습니다: output_plots\Port_0-TLS_2.0-TR_4.0-Amp_0.2-DR_60.jpg
+
+2025-05-26 14:43:02,392 - __main__ - INFO - DICOM 파일 로드 중: ./data/RP_74102.dcm
+2025-05-26 14:43:02,429 - __main__ - INFO - 레이어 185.60MeV, dr_machine: 20.00MU/s, dr_old: 7.33MU/s,, dr_max: 586.66MU/s,  dr_corr_DR: 7.33MU/s, T_scan: 0.28s
+2025-05-26 14:43:02,430 - __main__ - INFO - 레이어 182.00MeV, dr_machine: 20.00MU/s, dr_old: 10.82MU/s,, dr_max: 865.41MU/s,  dr_corr_DR: 10.82MU/s, T_scan: 1.10s
+2025-05-26 14:43:02,431 - __main__ - INFO - 레이어 178.40MeV, dr_machine: 20.00MU/s, dr_old: 11.72MU/s,, dr_max: 937.76MU/s,  dr_corr_DR: 11.72MU/s, T_scan: 1.42s
+2025-05-26 14:43:02,432 - __main__ - INFO - 레이어 175.20MeV, dr_machine: 20.00MU/s, dr_old: 10.66MU/s,, dr_max: 852.72MU/s,  dr_corr_DR: 10.66MU/s, T_scan: 1.11s
+2025-05-26 14:43:02,433 - __main__ - INFO - 레이어 172.00MeV, dr_machine: 20.00MU/s, dr_old: 11.10MU/s,, dr_max: 887.84MU/s,  dr_corr_DR: 11.10MU/s, T_scan: 0.92s
+2025-05-26 14:43:02,433 - __main__ - INFO - 레이어 168.80MeV, dr_machine: 20.00MU/s, dr_old: 10.54MU/s,, dr_max: 842.85MU/s,  dr_corr_DR: 10.54MU/s, T_scan: 0.84s
+2025-05-26 14:43:02,434 - __main__ - INFO - 레이어 165.60MeV, dr_machine: 20.00MU/s, dr_old: 8.82MU/s,, dr_max: 705.41MU/s,  dr_corr_DR: 8.82MU/s, T_scan: 0.76s
+2025-05-26 14:43:02,435 - __main__ - INFO - 레이어 162.40MeV, dr_machine: 20.00MU/s, dr_old: 9.49MU/s,, dr_max: 759.24MU/s,  dr_corr_DR: 9.49MU/s, T_scan: 0.75s
+2025-05-26 14:43:02,436 - __main__ - INFO - 레이어 159.20MeV, dr_machine: 20.00MU/s, dr_old: 12.64MU/s,, dr_max: 1011.50MU/s,  dr_corr_DR: 12.64MU/s, T_scan: 0.60s
+2025-05-26 14:43:02,437 - __main__ - INFO - 레이어 156.00MeV, dr_machine: 20.00MU/s, dr_old: 11.63MU/s,, dr_max: 930.20MU/s,  dr_corr_DR: 11.63MU/s, T_scan: 0.75s
+2025-05-26 14:43:02,437 - __main__ - INFO - 레이어 152.80MeV, dr_machine: 20.00MU/s, dr_old: 11.52MU/s,, dr_max: 921.86MU/s,  dr_corr_DR: 11.52MU/s, T_scan: 0.67s
+2025-05-26 14:43:02,438 - __main__ - INFO - 레이어 150.00MeV, dr_machine: 20.00MU/s, dr_old: 11.18MU/s,, dr_max: 894.18MU/s,  dr_corr_DR: 11.18MU/s, T_scan: 0.53s
+2025-05-26 14:43:02,439 - __main__ - INFO - 레이어 147.20MeV, dr_machine: 20.00MU/s, dr_old: 10.10MU/s,, dr_max: 807.66MU/s,  dr_corr_DR: 10.10MU/s, T_scan: 0.54s
+2025-05-26 14:43:02,440 - __main__ - INFO - 레이어 144.40MeV, dr_machine: 19.53MU/s, dr_old: 12.21MU/s,, dr_max: 976.52MU/s,  dr_corr_DR: 12.21MU/s, T_scan: 0.43s
+2025-05-26 14:43:02,441 - __main__ - INFO - 레이어 141.60MeV, dr_machine: 17.24MU/s, dr_old: 9.44MU/s,, dr_max: 755.36MU/s,  dr_corr_DR: 9.44MU/s, T_scan: 0.50s
+2025-05-26 14:43:02,442 - __main__ - INFO - 레이어 138.80MeV, dr_machine: 16.09MU/s, dr_old: 10.60MU/s,, dr_max: 848.06MU/s,  dr_corr_DR: 10.60MU/s, T_scan: 0.41s
+2025-05-26 14:43:02,443 - __main__ - INFO - 레이어 136.00MeV, dr_machine: 14.94MU/s, dr_old: 7.57MU/s,, dr_max: 605.79MU/s,  dr_corr_DR: 7.57MU/s, T_scan: 0.47s
+2025-05-26 14:43:02,444 - __main__ - INFO - 레이어 133.20MeV, dr_machine: 13.79MU/s, dr_old: 5.60MU/s,, dr_max: 447.76MU/s,  dr_corr_DR: 5.60MU/s, T_scan: 0.46s
+2025-05-26 14:43:02,445 - __main__ - INFO - 레이어 130.40MeV, dr_machine: 12.64MU/s, dr_old: 10.89MU/s,, dr_max: 871.04MU/s,  dr_corr_DR: 10.89MU/s, T_scan: 0.20s
+2025-05-26 14:43:02,446 - __main__ - INFO - 레이어 128.00MeV, dr_machine: 11.49MU/s, dr_old: 5.67MU/s,, dr_max: 453.67MU/s,  dr_corr_DR: 5.67MU/s, T_scan: 0.23s
+2025-05-26 14:43:02,447 - __main__ - INFO - 레이어 125.60MeV, dr_machine: 10.80MU/s, dr_old: 4.98MU/s,, dr_max: 398.24MU/s,  dr_corr_DR: 4.98MU/s, T_scan: 0.21s
+2025-05-26 14:43:02,448 - __main__ - INFO - 레이어 123.20MeV, dr_machine: 10.80MU/s, dr_old: 4.52MU/s,, dr_max: 361.64MU/s,  dr_corr_DR: 4.52MU/s, T_scan: 0.17s
+2025-05-26 14:43:02,449 - __main__ - INFO - 레이어 120.80MeV, dr_machine: 9.90MU/s, dr_old: 2.64MU/s,, dr_max: 211.21MU/s,  dr_corr_DR: 2.64MU/s, T_scan: 0.21s
+2025-05-26 14:43:02,450 - __main__ - INFO - 레이어 118.40MeV, dr_machine: 9.19MU/s, dr_old: 6.66MU/s,, dr_max: 31.07MU/s,  dr_corr_DR: 6.66MU/s, T_scan: 0.00s
+2025-05-26 14:43:02,450 - __main__ - INFO - 레이어 116.00MeV, dr_machine: 9.19MU/s, dr_old: 9.19MU/s,, dr_max: 921.79MU/s,  dr_corr_DR: 9.19MU/s, T_scan: 0.13s
+2025-05-26 14:43:02,451 - __main__ - INFO - 레이어 113.60MeV, dr_machine: 9.19MU/s, dr_old: 5.91MU/s,, dr_max: 472.42MU/s,  dr_corr_DR: 5.91MU/s, T_scan: 0.05s
+2025-05-26 14:43:02,451 - __main__ - INFO - 호흡/게이팅 신호 생성 중 (주기: 4.0초, 진폭: 0.2)
+2025-05-26 14:43:02,453 - __main__ - INFO - 빔 조사 시간 시뮬레이션 중 (레이어 전환 시간: 2.0초)
+2025-05-26 14:43:02,454 - __main__ - INFO - T_on: 1.9357000000000002, T_off: 2.0643, T_total: 4.0
+2025-05-26 14:43:02,454 - __main__ - INFO - 처리 완료 - 총 치료 시간: 98.58초
+2025-05-26 14:43:02,660 - __main__ - INFO - 그래프가 저장되었습니다: output_plots\Port_0-TLS_2.0-TR_4.0-Amp_0.2-DR_80.jpg
+
+2025-05-26 14:43:02,728 - __main__ - INFO - DICOM 파일 로드 중: ./data/RP_74102.dcm
+2025-05-26 14:43:02,764 - __main__ - INFO - 레이어 185.60MeV, dr_machine: 20.00MU/s, dr_old: 5.93MU/s,, dr_max: 586.66MU/s,  dr_corr_DR: 5.93MU/s, T_scan: 0.35s
+2025-05-26 14:43:02,765 - __main__ - INFO - 레이어 182.00MeV, dr_machine: 20.00MU/s, dr_old: 8.65MU/s,, dr_max: 865.41MU/s,  dr_corr_DR: 8.65MU/s, T_scan: 1.37s
+2025-05-26 14:43:02,766 - __main__ - INFO - 레이어 178.40MeV, dr_machine: 20.00MU/s, dr_old: 9.38MU/s,, dr_max: 937.76MU/s,  dr_corr_DR: 9.38MU/s, T_scan: 1.78s
+2025-05-26 14:43:02,767 - __main__ - INFO - 레이어 175.20MeV, dr_machine: 20.00MU/s, dr_old: 8.53MU/s,, dr_max: 852.72MU/s,  dr_corr_DR: 8.53MU/s, T_scan: 1.39s
+2025-05-26 14:43:02,768 - __main__ - INFO - 레이어 172.00MeV, dr_machine: 20.00MU/s, dr_old: 8.88MU/s,, dr_max: 887.84MU/s,  dr_corr_DR: 8.88MU/s, T_scan: 1.14s
+2025-05-26 14:43:02,769 - __main__ - INFO - 레이어 168.80MeV, dr_machine: 20.00MU/s, dr_old: 8.43MU/s,, dr_max: 842.85MU/s,  dr_corr_DR: 8.43MU/s, T_scan: 1.04s
+2025-05-26 14:43:02,769 - __main__ - INFO - 레이어 165.60MeV, dr_machine: 20.00MU/s, dr_old: 7.05MU/s,, dr_max: 705.41MU/s,  dr_corr_DR: 7.05MU/s, T_scan: 0.94s
+2025-05-26 14:43:02,770 - __main__ - INFO - 레이어 162.40MeV, dr_machine: 20.00MU/s, dr_old: 7.59MU/s,, dr_max: 759.24MU/s,  dr_corr_DR: 7.59MU/s, T_scan: 0.93s
+2025-05-26 14:43:02,771 - __main__ - INFO - 레이어 159.20MeV, dr_machine: 20.00MU/s, dr_old: 10.11MU/s,, dr_max: 1011.50MU/s,  dr_corr_DR: 10.11MU/s, T_scan: 0.75s
+2025-05-26 14:43:02,772 - __main__ - INFO - 레이어 156.00MeV, dr_machine: 20.00MU/s, dr_old: 9.30MU/s,, dr_max: 930.20MU/s,  dr_corr_DR: 9.30MU/s, T_scan: 0.93s
+2025-05-26 14:43:02,772 - __main__ - INFO - 레이어 152.80MeV, dr_machine: 20.00MU/s, dr_old: 9.22MU/s,, dr_max: 921.86MU/s,  dr_corr_DR: 9.22MU/s, T_scan: 0.83s
+2025-05-26 14:43:02,773 - __main__ - INFO - 레이어 150.00MeV, dr_machine: 20.00MU/s, dr_old: 8.94MU/s,, dr_max: 894.18MU/s,  dr_corr_DR: 8.94MU/s, T_scan: 0.65s
+2025-05-26 14:43:02,774 - __main__ - INFO - 레이어 147.20MeV, dr_machine: 20.00MU/s, dr_old: 8.08MU/s,, dr_max: 807.66MU/s,  dr_corr_DR: 8.08MU/s, T_scan: 0.66s
+2025-05-26 14:43:02,774 - __main__ - INFO - 레이어 144.40MeV, dr_machine: 19.53MU/s, dr_old: 9.77MU/s,, dr_max: 976.52MU/s,  dr_corr_DR: 9.77MU/s, T_scan: 0.53s
+2025-05-26 14:43:02,775 - __main__ - INFO - 레이어 141.60MeV, dr_machine: 17.24MU/s, dr_old: 7.55MU/s,, dr_max: 755.36MU/s,  dr_corr_DR: 7.55MU/s, T_scan: 0.62s
+2025-05-26 14:43:02,776 - __main__ - INFO - 레이어 138.80MeV, dr_machine: 16.09MU/s, dr_old: 8.48MU/s,, dr_max: 848.06MU/s,  dr_corr_DR: 8.48MU/s, T_scan: 0.50s
+2025-05-26 14:43:02,777 - __main__ - INFO - 레이어 136.00MeV, dr_machine: 14.94MU/s, dr_old: 6.06MU/s,, dr_max: 605.79MU/s,  dr_corr_DR: 6.06MU/s, T_scan: 0.59s
+2025-05-26 14:43:02,777 - __main__ - INFO - 레이어 133.20MeV, dr_machine: 13.79MU/s, dr_old: 4.48MU/s,, dr_max: 447.76MU/s,  dr_corr_DR: 4.48MU/s, T_scan: 0.57s
+2025-05-26 14:43:02,778 - __main__ - INFO - 레이어 130.40MeV, dr_machine: 12.64MU/s, dr_old: 8.71MU/s,, dr_max: 871.04MU/s,  dr_corr_DR: 8.71MU/s, T_scan: 0.25s
+2025-05-26 14:43:02,779 - __main__ - INFO - 레이어 128.00MeV, dr_machine: 11.49MU/s, dr_old: 4.54MU/s,, dr_max: 453.67MU/s,  dr_corr_DR: 4.54MU/s, T_scan: 0.29s
+2025-05-26 14:43:02,780 - __main__ - INFO - 레이어 125.60MeV, dr_machine: 10.80MU/s, dr_old: 3.98MU/s,, dr_max: 398.24MU/s,  dr_corr_DR: 3.98MU/s, T_scan: 0.26s
+2025-05-26 14:43:02,781 - __main__ - INFO - 레이어 123.20MeV, dr_machine: 10.80MU/s, dr_old: 3.62MU/s,, dr_max: 361.64MU/s,  dr_corr_DR: 3.62MU/s, T_scan: 0.21s
+2025-05-26 14:43:02,782 - __main__ - INFO - 레이어 120.80MeV, dr_machine: 9.90MU/s, dr_old: 2.11MU/s,, dr_max: 211.21MU/s,  dr_corr_DR: 2.11MU/s, T_scan: 0.26s
+2025-05-26 14:43:02,783 - __main__ - INFO - 레이어 118.40MeV, dr_machine: 9.19MU/s, dr_old: 6.66MU/s,, dr_max: 31.07MU/s,  dr_corr_DR: 6.66MU/s, T_scan: 0.00s
+2025-05-26 14:43:02,783 - __main__ - INFO - 레이어 116.00MeV, dr_machine: 9.19MU/s, dr_old: 9.19MU/s,, dr_max: 921.79MU/s,  dr_corr_DR: 9.19MU/s, T_scan: 0.13s
+2025-05-26 14:43:02,784 - __main__ - INFO - 레이어 113.60MeV, dr_machine: 9.19MU/s, dr_old: 4.72MU/s,, dr_max: 472.42MU/s,  dr_corr_DR: 4.72MU/s, T_scan: 0.06s
+2025-05-26 14:43:02,784 - __main__ - INFO - 호흡/게이팅 신호 생성 중 (주기: 4.0초, 진폭: 0.2)
+2025-05-26 14:43:02,787 - __main__ - INFO - 빔 조사 시간 시뮬레이션 중 (레이어 전환 시간: 2.0초)
+2025-05-26 14:43:02,787 - __main__ - INFO - T_on: 1.9357000000000002, T_off: 2.0643, T_total: 4.0
+2025-05-26 14:43:02,788 - __main__ - INFO - 처리 완료 - 총 치료 시간: 98.59초
+2025-05-26 14:43:02,997 - __main__ - INFO - 그래프가 저장되었습니다: output_plots\Port_0-TLS_2.0-TR_4.0-Amp_0.2-DR_100.jpg
+
+2025-05-26 14:43:03,065 - __main__ - INFO - DICOM 파일 로드 중: ./data/RP_74102.dcm
+2025-05-26 14:43:03,104 - __main__ - INFO - 레이어 185.60MeV, dr_machine: 20.00MU/s, dr_old: 5.93MU/s,, dr_max: 586.66MU/s,  dr_corr_DR: 5.93MU/s, T_scan: 0.35s
+2025-05-26 14:43:03,105 - __main__ - INFO - 레이어 182.00MeV, dr_machine: 20.00MU/s, dr_old: 7.21MU/s,, dr_max: 865.41MU/s,  dr_corr_DR: 7.21MU/s, T_scan: 1.65s
+2025-05-26 14:43:03,106 - __main__ - INFO - 레이어 178.40MeV, dr_machine: 20.00MU/s, dr_old: 7.81MU/s,, dr_max: 937.76MU/s,  dr_corr_DR: 7.81MU/s, T_scan: 2.13s
+2025-05-26 14:43:03,107 - __main__ - INFO - 레이어 175.20MeV, dr_machine: 20.00MU/s, dr_old: 7.11MU/s,, dr_max: 852.72MU/s,  dr_corr_DR: 7.11MU/s, T_scan: 1.67s
+2025-05-26 14:43:03,108 - __main__ - INFO - 레이어 172.00MeV, dr_machine: 20.00MU/s, dr_old: 7.40MU/s,, dr_max: 887.84MU/s,  dr_corr_DR: 7.40MU/s, T_scan: 1.37s
+2025-05-26 14:43:03,108 - __main__ - INFO - 레이어 168.80MeV, dr_machine: 20.00MU/s, dr_old: 7.02MU/s,, dr_max: 842.85MU/s,  dr_corr_DR: 7.02MU/s, T_scan: 1.25s
+2025-05-26 14:43:03,109 - __main__ - INFO - 레이어 165.60MeV, dr_machine: 20.00MU/s, dr_old: 5.88MU/s,, dr_max: 705.41MU/s,  dr_corr_DR: 5.88MU/s, T_scan: 1.13s
+2025-05-26 14:43:03,110 - __main__ - INFO - 레이어 162.40MeV, dr_machine: 20.00MU/s, dr_old: 6.38MU/s,, dr_max: 759.24MU/s,  dr_corr_DR: 6.38MU/s, T_scan: 1.10s
+2025-05-26 14:43:03,110 - __main__ - INFO - 레이어 159.20MeV, dr_machine: 20.00MU/s, dr_old: 8.43MU/s,, dr_max: 1011.50MU/s,  dr_corr_DR: 8.43MU/s, T_scan: 0.89s
+2025-05-26 14:43:03,112 - __main__ - INFO - 레이어 156.00MeV, dr_machine: 20.00MU/s, dr_old: 7.75MU/s,, dr_max: 930.20MU/s,  dr_corr_DR: 7.75MU/s, T_scan: 1.11s
+2025-05-26 14:43:03,113 - __main__ - INFO - 레이어 152.80MeV, dr_machine: 20.00MU/s, dr_old: 7.68MU/s,, dr_max: 921.86MU/s,  dr_corr_DR: 7.68MU/s, T_scan: 0.99s
+2025-05-26 14:43:03,114 - __main__ - INFO - 레이어 150.00MeV, dr_machine: 20.00MU/s, dr_old: 7.45MU/s,, dr_max: 894.18MU/s,  dr_corr_DR: 7.45MU/s, T_scan: 0.78s
+2025-05-26 14:43:03,114 - __main__ - INFO - 레이어 147.20MeV, dr_machine: 20.00MU/s, dr_old: 6.73MU/s,, dr_max: 807.66MU/s,  dr_corr_DR: 6.73MU/s, T_scan: 0.79s
+2025-05-26 14:43:03,116 - __main__ - INFO - 레이어 144.40MeV, dr_machine: 19.53MU/s, dr_old: 8.14MU/s,, dr_max: 976.52MU/s,  dr_corr_DR: 8.14MU/s, T_scan: 0.63s
+2025-05-26 14:43:03,116 - __main__ - INFO - 레이어 141.60MeV, dr_machine: 17.24MU/s, dr_old: 6.43MU/s,, dr_max: 755.36MU/s,  dr_corr_DR: 6.43MU/s, T_scan: 0.73s
+2025-05-26 14:43:03,118 - __main__ - INFO - 레이어 138.80MeV, dr_machine: 16.09MU/s, dr_old: 7.07MU/s,, dr_max: 848.06MU/s,  dr_corr_DR: 7.07MU/s, T_scan: 0.60s
+2025-05-26 14:43:03,118 - __main__ - INFO - 레이어 136.00MeV, dr_machine: 14.94MU/s, dr_old: 5.05MU/s,, dr_max: 605.79MU/s,  dr_corr_DR: 5.05MU/s, T_scan: 0.70s
+2025-05-26 14:43:03,119 - __main__ - INFO - 레이어 133.20MeV, dr_machine: 13.79MU/s, dr_old: 3.73MU/s,, dr_max: 447.76MU/s,  dr_corr_DR: 3.73MU/s, T_scan: 0.69s
+2025-05-26 14:43:03,120 - __main__ - INFO - 레이어 130.40MeV, dr_machine: 12.64MU/s, dr_old: 8.13MU/s,, dr_max: 871.04MU/s,  dr_corr_DR: 8.13MU/s, T_scan: 0.27s
+2025-05-26 14:43:03,121 - __main__ - INFO - 레이어 128.00MeV, dr_machine: 11.49MU/s, dr_old: 4.37MU/s,, dr_max: 453.67MU/s,  dr_corr_DR: 4.37MU/s, T_scan: 0.30s
+2025-05-26 14:43:03,121 - __main__ - INFO - 레이어 125.60MeV, dr_machine: 10.80MU/s, dr_old: 3.32MU/s,, dr_max: 398.24MU/s,  dr_corr_DR: 3.32MU/s, T_scan: 0.31s
+2025-05-26 14:43:03,122 - __main__ - INFO - 레이어 123.20MeV, dr_machine: 10.80MU/s, dr_old: 3.01MU/s,, dr_max: 361.64MU/s,  dr_corr_DR: 3.01MU/s, T_scan: 0.25s
+2025-05-26 14:43:03,123 - __main__ - INFO - 레이어 120.80MeV, dr_machine: 9.90MU/s, dr_old: 1.82MU/s,, dr_max: 211.21MU/s,  dr_corr_DR: 1.82MU/s, T_scan: 0.30s
+2025-05-26 14:43:03,123 - __main__ - INFO - 레이어 118.40MeV, dr_machine: 9.19MU/s, dr_old: 6.66MU/s,, dr_max: 31.07MU/s,  dr_corr_DR: 6.66MU/s, T_scan: 0.00s
+2025-05-26 14:43:03,124 - __main__ - INFO - 레이어 116.00MeV, dr_machine: 9.19MU/s, dr_old: 8.07MU/s,, dr_max: 921.79MU/s,  dr_corr_DR: 8.07MU/s, T_scan: 0.15s
+2025-05-26 14:43:03,125 - __main__ - INFO - 레이어 113.60MeV, dr_machine: 9.19MU/s, dr_old: 4.38MU/s,, dr_max: 472.42MU/s,  dr_corr_DR: 4.38MU/s, T_scan: 0.06s
+2025-05-26 14:43:03,125 - __main__ - INFO - 호흡/게이팅 신호 생성 중 (주기: 4.0초, 진폭: 0.2)
+2025-05-26 14:43:03,127 - __main__ - INFO - 빔 조사 시간 시뮬레이션 중 (레이어 전환 시간: 2.0초)
+2025-05-26 14:43:03,127 - __main__ - INFO - T_on: 1.9357000000000002, T_off: 2.0643, T_total: 4.0
+2025-05-26 14:43:03,127 - __main__ - INFO - 처리 완료 - 총 치료 시간: 102.60초
+2025-05-26 14:43:03,372 - __main__ - INFO - 그래프가 저장되었습니다: output_plots\Port_0-TLS_2.0-TR_4.0-Amp_0.2-DR_120.jpg
+
+2025-05-26 14:43:03,451 - __main__ - INFO - DICOM 파일 로드 중: ./data/RP_74102.dcm
+2025-05-26 14:43:03,490 - __main__ - INFO - 레이어 185.60MeV, dr_machine: 20.00MU/s, dr_old: 5.93MU/s,, dr_max: 586.66MU/s,  dr_corr_DR: 5.93MU/s, T_scan: 0.35s
+2025-05-26 14:43:03,491 - __main__ - INFO - 레이어 182.00MeV, dr_machine: 20.00MU/s, dr_old: 6.27MU/s,, dr_max: 865.41MU/s,  dr_corr_DR: 6.27MU/s, T_scan: 1.90s
+2025-05-26 14:43:03,492 - __main__ - INFO - 레이어 178.40MeV, dr_machine: 20.00MU/s, dr_old: 6.70MU/s,, dr_max: 937.76MU/s,  dr_corr_DR: 6.70MU/s, T_scan: 2.49s
+2025-05-26 14:43:03,493 - __main__ - INFO - 레이어 175.20MeV, dr_machine: 20.00MU/s, dr_old: 6.19MU/s,, dr_max: 852.72MU/s,  dr_corr_DR: 6.19MU/s, T_scan: 1.91s
+2025-05-26 14:43:03,494 - __main__ - INFO - 레이어 172.00MeV, dr_machine: 20.00MU/s, dr_old: 6.35MU/s,, dr_max: 887.84MU/s,  dr_corr_DR: 6.35MU/s, T_scan: 1.59s
+2025-05-26 14:43:03,495 - __main__ - INFO - 레이어 168.80MeV, dr_machine: 20.00MU/s, dr_old: 6.16MU/s,, dr_max: 842.85MU/s,  dr_corr_DR: 6.16MU/s, T_scan: 1.42s
+2025-05-26 14:43:03,496 - __main__ - INFO - 레이어 165.60MeV, dr_machine: 20.00MU/s, dr_old: 5.10MU/s,, dr_max: 705.41MU/s,  dr_corr_DR: 5.10MU/s, T_scan: 1.30s
+2025-05-26 14:43:03,497 - __main__ - INFO - 레이어 162.40MeV, dr_machine: 20.00MU/s, dr_old: 6.38MU/s,, dr_max: 759.24MU/s,  dr_corr_DR: 6.38MU/s, T_scan: 1.10s
+2025-05-26 14:43:03,498 - __main__ - INFO - 레이어 159.20MeV, dr_machine: 20.00MU/s, dr_old: 7.22MU/s,, dr_max: 1011.50MU/s,  dr_corr_DR: 7.22MU/s, T_scan: 1.04s
+2025-05-26 14:43:03,499 - __main__ - INFO - 레이어 156.00MeV, dr_machine: 20.00MU/s, dr_old: 6.64MU/s,, dr_max: 930.20MU/s,  dr_corr_DR: 6.64MU/s, T_scan: 1.29s
+2025-05-26 14:43:03,500 - __main__ - INFO - 레이어 152.80MeV, dr_machine: 20.00MU/s, dr_old: 6.63MU/s,, dr_max: 921.86MU/s,  dr_corr_DR: 6.63MU/s, T_scan: 1.15s
+2025-05-26 14:43:03,501 - __main__ - INFO - 레이어 150.00MeV, dr_machine: 20.00MU/s, dr_old: 6.40MU/s,, dr_max: 894.18MU/s,  dr_corr_DR: 6.40MU/s, T_scan: 0.90s
+2025-05-26 14:43:03,501 - __main__ - INFO - 레이어 147.20MeV, dr_machine: 20.00MU/s, dr_old: 6.49MU/s,, dr_max: 807.66MU/s,  dr_corr_DR: 6.49MU/s, T_scan: 0.82s
+2025-05-26 14:43:03,502 - __main__ - INFO - 레이어 144.40MeV, dr_machine: 19.53MU/s, dr_old: 6.98MU/s,, dr_max: 976.52MU/s,  dr_corr_DR: 6.98MU/s, T_scan: 0.73s
+2025-05-26 14:43:03,503 - __main__ - INFO - 레이어 141.60MeV, dr_machine: 17.24MU/s, dr_old: 6.43MU/s,, dr_max: 755.36MU/s,  dr_corr_DR: 6.43MU/s, T_scan: 0.73s
+2025-05-26 14:43:03,504 - __main__ - INFO - 레이어 138.80MeV, dr_machine: 16.09MU/s, dr_old: 6.73MU/s,, dr_max: 848.06MU/s,  dr_corr_DR: 6.73MU/s, T_scan: 0.63s
+2025-05-26 14:43:03,505 - __main__ - INFO - 레이어 136.00MeV, dr_machine: 14.94MU/s, dr_old: 4.33MU/s,, dr_max: 605.79MU/s,  dr_corr_DR: 4.33MU/s, T_scan: 0.81s
+2025-05-26 14:43:03,506 - __main__ - INFO - 레이어 133.20MeV, dr_machine: 13.79MU/s, dr_old: 3.20MU/s,, dr_max: 447.76MU/s,  dr_corr_DR: 3.20MU/s, T_scan: 0.80s
+2025-05-26 14:43:03,507 - __main__ - INFO - 레이어 130.40MeV, dr_machine: 12.64MU/s, dr_old: 8.13MU/s,, dr_max: 871.04MU/s,  dr_corr_DR: 8.13MU/s, T_scan: 0.27s
+2025-05-26 14:43:03,508 - __main__ - INFO - 레이어 128.00MeV, dr_machine: 11.49MU/s, dr_old: 4.37MU/s,, dr_max: 453.67MU/s,  dr_corr_DR: 4.37MU/s, T_scan: 0.30s
+2025-05-26 14:43:03,509 - __main__ - INFO - 레이어 125.60MeV, dr_machine: 10.80MU/s, dr_old: 2.84MU/s,, dr_max: 398.24MU/s,  dr_corr_DR: 2.84MU/s, T_scan: 0.36s
+2025-05-26 14:43:03,509 - __main__ - INFO - 레이어 123.20MeV, dr_machine: 10.80MU/s, dr_old: 2.58MU/s,, dr_max: 361.64MU/s,  dr_corr_DR: 2.58MU/s, T_scan: 0.29s
+2025-05-26 14:43:03,510 - __main__ - INFO - 레이어 120.80MeV, dr_machine: 9.90MU/s, dr_old: 1.82MU/s,, dr_max: 211.21MU/s,  dr_corr_DR: 1.82MU/s, T_scan: 0.30s
+2025-05-26 14:43:03,511 - __main__ - INFO - 레이어 118.40MeV, dr_machine: 9.19MU/s, dr_old: 6.66MU/s,, dr_max: 31.07MU/s,  dr_corr_DR: 6.66MU/s, T_scan: 0.00s
+2025-05-26 14:43:03,512 - __main__ - INFO - 레이어 116.00MeV, dr_machine: 9.19MU/s, dr_old: 8.07MU/s,, dr_max: 921.79MU/s,  dr_corr_DR: 8.07MU/s, T_scan: 0.15s
+2025-05-26 14:43:03,513 - __main__ - INFO - 레이어 113.60MeV, dr_machine: 9.19MU/s, dr_old: 4.38MU/s,, dr_max: 472.42MU/s,  dr_corr_DR: 4.38MU/s, T_scan: 0.06s
+2025-05-26 14:43:03,513 - __main__ - INFO - 호흡/게이팅 신호 생성 중 (주기: 4.0초, 진폭: 0.2)
+2025-05-26 14:43:03,516 - __main__ - INFO - 빔 조사 시간 시뮬레이션 중 (레이어 전환 시간: 2.0초)
+2025-05-26 14:43:03,516 - __main__ - INFO - T_on: 1.9357000000000002, T_off: 2.0643, T_total: 4.0
+2025-05-26 14:43:03,517 - __main__ - INFO - 처리 완료 - 총 치료 시간: 102.60초
+2025-05-26 14:43:03,742 - __main__ - INFO - 그래프가 저장되었습니다: output_plots\Port_0-TLS_2.0-TR_4.0-Amp_0.2-DR_140.jpg
+
+2025-05-26 14:43:03,814 - __main__ - INFO - DICOM 파일 로드 중: ./data/RP_74102.dcm
+2025-05-26 14:43:03,852 - __main__ - INFO - 레이어 185.60MeV, dr_machine: 20.00MU/s, dr_old: 5.93MU/s,, dr_max: 586.66MU/s,  dr_corr_DR: 5.93MU/s, T_scan: 0.35s
+2025-05-26 14:43:03,852 - __main__ - INFO - 레이어 182.00MeV, dr_machine: 20.00MU/s, dr_old: 6.27MU/s,, dr_max: 865.41MU/s,  dr_corr_DR: 6.27MU/s, T_scan: 1.90s
+2025-05-26 14:43:03,853 - __main__ - INFO - 레이어 178.40MeV, dr_machine: 20.00MU/s, dr_old: 6.37MU/s,, dr_max: 937.76MU/s,  dr_corr_DR: 6.37MU/s, T_scan: 2.62s
+2025-05-26 14:43:03,854 - __main__ - INFO - 레이어 175.20MeV, dr_machine: 20.00MU/s, dr_old: 6.19MU/s,, dr_max: 852.72MU/s,  dr_corr_DR: 6.19MU/s, T_scan: 1.91s
+2025-05-26 14:43:03,855 - __main__ - INFO - 레이어 172.00MeV, dr_machine: 20.00MU/s, dr_old: 6.35MU/s,, dr_max: 887.84MU/s,  dr_corr_DR: 6.35MU/s, T_scan: 1.59s
+2025-05-26 14:43:03,855 - __main__ - INFO - 레이어 168.80MeV, dr_machine: 20.00MU/s, dr_old: 6.16MU/s,, dr_max: 842.85MU/s,  dr_corr_DR: 6.16MU/s, T_scan: 1.42s
+2025-05-26 14:43:03,856 - __main__ - INFO - 레이어 165.60MeV, dr_machine: 20.00MU/s, dr_old: 5.10MU/s,, dr_max: 705.41MU/s,  dr_corr_DR: 5.10MU/s, T_scan: 1.30s
+2025-05-26 14:43:03,857 - __main__ - INFO - 레이어 162.40MeV, dr_machine: 20.00MU/s, dr_old: 6.38MU/s,, dr_max: 759.24MU/s,  dr_corr_DR: 6.38MU/s, T_scan: 1.10s
+2025-05-26 14:43:03,857 - __main__ - INFO - 레이어 159.20MeV, dr_machine: 20.00MU/s, dr_old: 6.72MU/s,, dr_max: 1011.50MU/s,  dr_corr_DR: 6.72MU/s, T_scan: 1.11s
+2025-05-26 14:43:03,858 - __main__ - INFO - 레이어 156.00MeV, dr_machine: 20.00MU/s, dr_old: 6.17MU/s,, dr_max: 930.20MU/s,  dr_corr_DR: 6.17MU/s, T_scan: 1.39s
+2025-05-26 14:43:03,859 - __main__ - INFO - 레이어 152.80MeV, dr_machine: 20.00MU/s, dr_old: 6.63MU/s,, dr_max: 921.86MU/s,  dr_corr_DR: 6.63MU/s, T_scan: 1.15s
+2025-05-26 14:43:03,860 - __main__ - INFO - 레이어 150.00MeV, dr_machine: 20.00MU/s, dr_old: 6.40MU/s,, dr_max: 894.18MU/s,  dr_corr_DR: 6.40MU/s, T_scan: 0.90s
+2025-05-26 14:43:03,861 - __main__ - INFO - 레이어 147.20MeV, dr_machine: 20.00MU/s, dr_old: 6.49MU/s,, dr_max: 807.66MU/s,  dr_corr_DR: 6.49MU/s, T_scan: 0.82s
+2025-05-26 14:43:03,861 - __main__ - INFO - 레이어 144.40MeV, dr_machine: 19.53MU/s, dr_old: 6.54MU/s,, dr_max: 976.52MU/s,  dr_corr_DR: 6.54MU/s, T_scan: 0.78s
+2025-05-26 14:43:03,862 - __main__ - INFO - 레이어 141.60MeV, dr_machine: 17.24MU/s, dr_old: 6.43MU/s,, dr_max: 755.36MU/s,  dr_corr_DR: 6.43MU/s, T_scan: 0.73s
+2025-05-26 14:43:03,863 - __main__ - INFO - 레이어 138.80MeV, dr_machine: 16.09MU/s, dr_old: 6.73MU/s,, dr_max: 848.06MU/s,  dr_corr_DR: 6.73MU/s, T_scan: 0.63s
+2025-05-26 14:43:03,865 - __main__ - INFO - 레이어 136.00MeV, dr_machine: 14.94MU/s, dr_old: 4.02MU/s,, dr_max: 605.79MU/s,  dr_corr_DR: 4.02MU/s, T_scan: 0.87s
+2025-05-26 14:43:03,865 - __main__ - INFO - 레이어 133.20MeV, dr_machine: 13.79MU/s, dr_old: 2.98MU/s,, dr_max: 447.76MU/s,  dr_corr_DR: 2.98MU/s, T_scan: 0.86s
+2025-05-26 14:43:03,866 - __main__ - INFO - 레이어 130.40MeV, dr_machine: 12.64MU/s, dr_old: 8.13MU/s,, dr_max: 871.04MU/s,  dr_corr_DR: 8.13MU/s, T_scan: 0.27s
+2025-05-26 14:43:03,867 - __main__ - INFO - 레이어 128.00MeV, dr_machine: 11.49MU/s, dr_old: 4.37MU/s,, dr_max: 453.67MU/s,  dr_corr_DR: 4.37MU/s, T_scan: 0.30s
+2025-05-26 14:43:03,868 - __main__ - INFO - 레이어 125.60MeV, dr_machine: 10.80MU/s, dr_old: 2.80MU/s,, dr_max: 398.24MU/s,  dr_corr_DR: 2.80MU/s, T_scan: 0.37s
+2025-05-26 14:43:03,869 - __main__ - INFO - 레이어 123.20MeV, dr_machine: 10.80MU/s, dr_old: 2.41MU/s,, dr_max: 361.64MU/s,  dr_corr_DR: 2.41MU/s, T_scan: 0.31s
+2025-05-26 14:43:03,869 - __main__ - INFO - 레이어 120.80MeV, dr_machine: 9.90MU/s, dr_old: 1.82MU/s,, dr_max: 211.21MU/s,  dr_corr_DR: 1.82MU/s, T_scan: 0.30s
+2025-05-26 14:43:03,870 - __main__ - INFO - 레이어 118.40MeV, dr_machine: 9.19MU/s, dr_old: 6.66MU/s,, dr_max: 31.07MU/s,  dr_corr_DR: 6.66MU/s, T_scan: 0.00s
+2025-05-26 14:43:03,871 - __main__ - INFO - 레이어 116.00MeV, dr_machine: 9.19MU/s, dr_old: 8.07MU/s,, dr_max: 921.79MU/s,  dr_corr_DR: 8.07MU/s, T_scan: 0.15s
+2025-05-26 14:43:03,872 - __main__ - INFO - 레이어 113.60MeV, dr_machine: 9.19MU/s, dr_old: 4.38MU/s,, dr_max: 472.42MU/s,  dr_corr_DR: 4.38MU/s, T_scan: 0.06s
+2025-05-26 14:43:03,872 - __main__ - INFO - 호흡/게이팅 신호 생성 중 (주기: 4.0초, 진폭: 0.2)
+2025-05-26 14:43:03,874 - __main__ - INFO - 빔 조사 시간 시뮬레이션 중 (레이어 전환 시간: 2.0초)
+2025-05-26 14:43:03,874 - __main__ - INFO - T_on: 1.9357000000000002, T_off: 2.0643, T_total: 4.0
+2025-05-26 14:43:03,874 - __main__ - INFO - 처리 완료 - 총 치료 시간: 102.60초
+2025-05-26 14:43:04,121 - __main__ - INFO - 그래프가 저장되었습니다: output_plots\Port_0-TLS_2.0-TR_4.0-Amp_0.2-DR_160.jpg
+
+2025-05-26 14:43:04,196 - __main__ - INFO - DICOM 파일 로드 중: ./data/RP_74102.dcm
+2025-05-26 14:43:04,246 - __main__ - INFO - 레이어 185.60MeV, dr_machine: 20.00MU/s, dr_old: 5.93MU/s,, dr_max: 586.66MU/s,  dr_corr_DR: 5.93MU/s, T_scan: 0.35s
+2025-05-26 14:43:04,247 - __main__ - INFO - 레이어 182.00MeV, dr_machine: 20.00MU/s, dr_old: 6.27MU/s,, dr_max: 865.41MU/s,  dr_corr_DR: 6.27MU/s, T_scan: 1.90s
+2025-05-26 14:43:04,249 - __main__ - INFO - 레이어 178.40MeV, dr_machine: 20.00MU/s, dr_old: 6.37MU/s,, dr_max: 937.76MU/s,  dr_corr_DR: 6.37MU/s, T_scan: 2.62s
+2025-05-26 14:43:04,250 - __main__ - INFO - 레이어 175.20MeV, dr_machine: 20.00MU/s, dr_old: 6.19MU/s,, dr_max: 852.72MU/s,  dr_corr_DR: 6.19MU/s, T_scan: 1.91s
+2025-05-26 14:43:04,252 - __main__ - INFO - 레이어 172.00MeV, dr_machine: 20.00MU/s, dr_old: 6.35MU/s,, dr_max: 887.84MU/s,  dr_corr_DR: 6.35MU/s, T_scan: 1.59s
+2025-05-26 14:43:04,253 - __main__ - INFO - 레이어 168.80MeV, dr_machine: 20.00MU/s, dr_old: 6.16MU/s,, dr_max: 842.85MU/s,  dr_corr_DR: 6.16MU/s, T_scan: 1.42s
+2025-05-26 14:43:04,255 - __main__ - INFO - 레이어 165.60MeV, dr_machine: 20.00MU/s, dr_old: 5.10MU/s,, dr_max: 705.41MU/s,  dr_corr_DR: 5.10MU/s, T_scan: 1.30s
+2025-05-26 14:43:04,256 - __main__ - INFO - 레이어 162.40MeV, dr_machine: 20.00MU/s, dr_old: 6.38MU/s,, dr_max: 759.24MU/s,  dr_corr_DR: 6.38MU/s, T_scan: 1.10s
+2025-05-26 14:43:04,257 - __main__ - INFO - 레이어 159.20MeV, dr_machine: 20.00MU/s, dr_old: 6.72MU/s,, dr_max: 1011.50MU/s,  dr_corr_DR: 6.72MU/s, T_scan: 1.11s
+2025-05-26 14:43:04,258 - __main__ - INFO - 레이어 156.00MeV, dr_machine: 20.00MU/s, dr_old: 6.17MU/s,, dr_max: 930.20MU/s,  dr_corr_DR: 6.17MU/s, T_scan: 1.39s
+2025-05-26 14:43:04,259 - __main__ - INFO - 레이어 152.80MeV, dr_machine: 20.00MU/s, dr_old: 6.63MU/s,, dr_max: 921.86MU/s,  dr_corr_DR: 6.63MU/s, T_scan: 1.15s
+2025-05-26 14:43:04,261 - __main__ - INFO - 레이어 150.00MeV, dr_machine: 20.00MU/s, dr_old: 6.40MU/s,, dr_max: 894.18MU/s,  dr_corr_DR: 6.40MU/s, T_scan: 0.90s
+2025-05-26 14:43:04,262 - __main__ - INFO - 레이어 147.20MeV, dr_machine: 20.00MU/s, dr_old: 6.49MU/s,, dr_max: 807.66MU/s,  dr_corr_DR: 6.49MU/s, T_scan: 0.82s
+2025-05-26 14:43:04,262 - __main__ - INFO - 레이어 144.40MeV, dr_machine: 19.53MU/s, dr_old: 6.54MU/s,, dr_max: 976.52MU/s,  dr_corr_DR: 6.54MU/s, T_scan: 0.78s
+2025-05-26 14:43:04,264 - __main__ - INFO - 레이어 141.60MeV, dr_machine: 17.24MU/s, dr_old: 6.43MU/s,, dr_max: 755.36MU/s,  dr_corr_DR: 6.43MU/s, T_scan: 0.73s
+2025-05-26 14:43:04,265 - __main__ - INFO - 레이어 138.80MeV, dr_machine: 16.09MU/s, dr_old: 6.73MU/s,, dr_max: 848.06MU/s,  dr_corr_DR: 6.73MU/s, T_scan: 0.63s
+2025-05-26 14:43:04,266 - __main__ - INFO - 레이어 136.00MeV, dr_machine: 14.94MU/s, dr_old: 4.02MU/s,, dr_max: 605.79MU/s,  dr_corr_DR: 4.02MU/s, T_scan: 0.87s
+2025-05-26 14:43:04,268 - __main__ - INFO - 레이어 133.20MeV, dr_machine: 13.79MU/s, dr_old: 2.98MU/s,, dr_max: 447.76MU/s,  dr_corr_DR: 2.98MU/s, T_scan: 0.86s
+2025-05-26 14:43:04,269 - __main__ - INFO - 레이어 130.40MeV, dr_machine: 12.64MU/s, dr_old: 8.13MU/s,, dr_max: 871.04MU/s,  dr_corr_DR: 8.13MU/s, T_scan: 0.27s
+2025-05-26 14:43:04,270 - __main__ - INFO - 레이어 128.00MeV, dr_machine: 11.49MU/s, dr_old: 4.37MU/s,, dr_max: 453.67MU/s,  dr_corr_DR: 4.37MU/s, T_scan: 0.30s
+2025-05-26 14:43:04,272 - __main__ - INFO - 레이어 125.60MeV, dr_machine: 10.80MU/s, dr_old: 2.80MU/s,, dr_max: 398.24MU/s,  dr_corr_DR: 2.80MU/s, T_scan: 0.37s
+2025-05-26 14:43:04,273 - __main__ - INFO - 레이어 123.20MeV, dr_machine: 10.80MU/s, dr_old: 2.41MU/s,, dr_max: 361.64MU/s,  dr_corr_DR: 2.41MU/s, T_scan: 0.31s
+2025-05-26 14:43:04,274 - __main__ - INFO - 레이어 120.80MeV, dr_machine: 9.90MU/s, dr_old: 1.82MU/s,, dr_max: 211.21MU/s,  dr_corr_DR: 1.82MU/s, T_scan: 0.30s
+2025-05-26 14:43:04,275 - __main__ - INFO - 레이어 118.40MeV, dr_machine: 9.19MU/s, dr_old: 6.66MU/s,, dr_max: 31.07MU/s,  dr_corr_DR: 6.66MU/s, T_scan: 0.00s
+2025-05-26 14:43:04,276 - __main__ - INFO - 레이어 116.00MeV, dr_machine: 9.19MU/s, dr_old: 8.07MU/s,, dr_max: 921.79MU/s,  dr_corr_DR: 8.07MU/s, T_scan: 0.15s
+2025-05-26 14:43:04,277 - __main__ - INFO - 레이어 113.60MeV, dr_machine: 9.19MU/s, dr_old: 4.38MU/s,, dr_max: 472.42MU/s,  dr_corr_DR: 4.38MU/s, T_scan: 0.06s
+2025-05-26 14:43:04,277 - __main__ - INFO - 호흡/게이팅 신호 생성 중 (주기: 4.0초, 진폭: 0.2)
+2025-05-26 14:43:04,280 - __main__ - INFO - 빔 조사 시간 시뮬레이션 중 (레이어 전환 시간: 2.0초)
+2025-05-26 14:43:04,280 - __main__ - INFO - T_on: 1.9357000000000002, T_off: 2.0643, T_total: 4.0
+2025-05-26 14:43:04,281 - __main__ - INFO - 처리 완료 - 총 치료 시간: 102.60초
+2025-05-26 14:43:04,566 - __main__ - INFO - 그래프가 저장되었습니다: output_plots\Port_0-TLS_2.0-TR_4.0-Amp_0.2-DR_180.jpg
+
+2025-05-26 14:43:04,635 - __main__ - INFO - DICOM 파일 로드 중: ./data/RP_74102.dcm
+2025-05-26 14:43:04,679 - __main__ - INFO - 레이어 185.60MeV, dr_machine: 20.00MU/s, dr_old: 5.93MU/s,, dr_max: 586.66MU/s,  dr_corr_DR: 5.93MU/s, T_scan: 0.35s
+2025-05-26 14:43:04,680 - __main__ - INFO - 레이어 182.00MeV, dr_machine: 20.00MU/s, dr_old: 6.27MU/s,, dr_max: 865.41MU/s,  dr_corr_DR: 6.27MU/s, T_scan: 1.90s
+2025-05-26 14:43:04,681 - __main__ - INFO - 레이어 178.40MeV, dr_machine: 20.00MU/s, dr_old: 6.37MU/s,, dr_max: 937.76MU/s,  dr_corr_DR: 6.37MU/s, T_scan: 2.62s
+2025-05-26 14:43:04,682 - __main__ - INFO - 레이어 175.20MeV, dr_machine: 20.00MU/s, dr_old: 6.19MU/s,, dr_max: 852.72MU/s,  dr_corr_DR: 6.19MU/s, T_scan: 1.91s
+2025-05-26 14:43:04,683 - __main__ - INFO - 레이어 172.00MeV, dr_machine: 20.00MU/s, dr_old: 6.35MU/s,, dr_max: 887.84MU/s,  dr_corr_DR: 6.35MU/s, T_scan: 1.59s
+2025-05-26 14:43:04,684 - __main__ - INFO - 레이어 168.80MeV, dr_machine: 20.00MU/s, dr_old: 6.16MU/s,, dr_max: 842.85MU/s,  dr_corr_DR: 6.16MU/s, T_scan: 1.42s
+2025-05-26 14:43:04,685 - __main__ - INFO - 레이어 165.60MeV, dr_machine: 20.00MU/s, dr_old: 5.10MU/s,, dr_max: 705.41MU/s,  dr_corr_DR: 5.10MU/s, T_scan: 1.30s
+2025-05-26 14:43:04,685 - __main__ - INFO - 레이어 162.40MeV, dr_machine: 20.00MU/s, dr_old: 6.38MU/s,, dr_max: 759.24MU/s,  dr_corr_DR: 6.38MU/s, T_scan: 1.10s
+2025-05-26 14:43:04,686 - __main__ - INFO - 레이어 159.20MeV, dr_machine: 20.00MU/s, dr_old: 6.72MU/s,, dr_max: 1011.50MU/s,  dr_corr_DR: 6.72MU/s, T_scan: 1.11s
+2025-05-26 14:43:04,686 - __main__ - INFO - 레이어 156.00MeV, dr_machine: 20.00MU/s, dr_old: 6.17MU/s,, dr_max: 930.20MU/s,  dr_corr_DR: 6.17MU/s, T_scan: 1.39s
+2025-05-26 14:43:04,687 - __main__ - INFO - 레이어 152.80MeV, dr_machine: 20.00MU/s, dr_old: 6.63MU/s,, dr_max: 921.86MU/s,  dr_corr_DR: 6.63MU/s, T_scan: 1.15s
+2025-05-26 14:43:04,688 - __main__ - INFO - 레이어 150.00MeV, dr_machine: 20.00MU/s, dr_old: 6.40MU/s,, dr_max: 894.18MU/s,  dr_corr_DR: 6.40MU/s, T_scan: 0.90s
+2025-05-26 14:43:04,690 - __main__ - INFO - 레이어 147.20MeV, dr_machine: 20.00MU/s, dr_old: 6.49MU/s,, dr_max: 807.66MU/s,  dr_corr_DR: 6.49MU/s, T_scan: 0.82s
+2025-05-26 14:43:04,690 - __main__ - INFO - 레이어 144.40MeV, dr_machine: 19.53MU/s, dr_old: 6.54MU/s,, dr_max: 976.52MU/s,  dr_corr_DR: 6.54MU/s, T_scan: 0.78s
+2025-05-26 14:43:04,691 - __main__ - INFO - 레이어 141.60MeV, dr_machine: 17.24MU/s, dr_old: 6.43MU/s,, dr_max: 755.36MU/s,  dr_corr_DR: 6.43MU/s, T_scan: 0.73s
+2025-05-26 14:43:04,692 - __main__ - INFO - 레이어 138.80MeV, dr_machine: 16.09MU/s, dr_old: 6.73MU/s,, dr_max: 848.06MU/s,  dr_corr_DR: 6.73MU/s, T_scan: 0.63s
+2025-05-26 14:43:04,693 - __main__ - INFO - 레이어 136.00MeV, dr_machine: 14.94MU/s, dr_old: 4.02MU/s,, dr_max: 605.79MU/s,  dr_corr_DR: 4.02MU/s, T_scan: 0.87s
+2025-05-26 14:43:04,693 - __main__ - INFO - 레이어 133.20MeV, dr_machine: 13.79MU/s, dr_old: 2.98MU/s,, dr_max: 447.76MU/s,  dr_corr_DR: 2.98MU/s, T_scan: 0.86s
+2025-05-26 14:43:04,694 - __main__ - INFO - 레이어 130.40MeV, dr_machine: 12.64MU/s, dr_old: 8.13MU/s,, dr_max: 871.04MU/s,  dr_corr_DR: 8.13MU/s, T_scan: 0.27s
+2025-05-26 14:43:04,695 - __main__ - INFO - 레이어 128.00MeV, dr_machine: 11.49MU/s, dr_old: 4.37MU/s,, dr_max: 453.67MU/s,  dr_corr_DR: 4.37MU/s, T_scan: 0.30s
+2025-05-26 14:43:04,696 - __main__ - INFO - 레이어 125.60MeV, dr_machine: 10.80MU/s, dr_old: 2.80MU/s,, dr_max: 398.24MU/s,  dr_corr_DR: 2.80MU/s, T_scan: 0.37s
+2025-05-26 14:43:04,697 - __main__ - INFO - 레이어 123.20MeV, dr_machine: 10.80MU/s, dr_old: 2.41MU/s,, dr_max: 361.64MU/s,  dr_corr_DR: 2.41MU/s, T_scan: 0.31s
+2025-05-26 14:43:04,698 - __main__ - INFO - 레이어 120.80MeV, dr_machine: 9.90MU/s, dr_old: 1.82MU/s,, dr_max: 211.21MU/s,  dr_corr_DR: 1.82MU/s, T_scan: 0.30s
+2025-05-26 14:43:04,698 - __main__ - INFO - 레이어 118.40MeV, dr_machine: 9.19MU/s, dr_old: 6.66MU/s,, dr_max: 31.07MU/s,  dr_corr_DR: 6.66MU/s, T_scan: 0.00s
+2025-05-26 14:43:04,699 - __main__ - INFO - 레이어 116.00MeV, dr_machine: 9.19MU/s, dr_old: 8.07MU/s,, dr_max: 921.79MU/s,  dr_corr_DR: 8.07MU/s, T_scan: 0.15s
+2025-05-26 14:43:04,699 - __main__ - INFO - 레이어 113.60MeV, dr_machine: 9.19MU/s, dr_old: 4.38MU/s,, dr_max: 472.42MU/s,  dr_corr_DR: 4.38MU/s, T_scan: 0.06s
+2025-05-26 14:43:04,701 - __main__ - INFO - 호흡/게이팅 신호 생성 중 (주기: 4.0초, 진폭: 0.2)
+2025-05-26 14:43:04,703 - __main__ - INFO - 빔 조사 시간 시뮬레이션 중 (레이어 전환 시간: 2.0초)
+2025-05-26 14:43:04,703 - __main__ - INFO - T_on: 1.9357000000000002, T_off: 2.0643, T_total: 4.0
+2025-05-26 14:43:04,704 - __main__ - INFO - 처리 완료 - 총 치료 시간: 102.60초
+2025-05-26 14:43:04,943 - __main__ - INFO - 그래프가 저장되었습니다: output_plots\Port_0-TLS_2.0-TR_4.0-Amp_0.2-DR_200.jpg
+
